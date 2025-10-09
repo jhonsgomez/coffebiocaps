@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* ================== Helvetica Now Display ================== */
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('../fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('../fonts/HelveticaNowDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('../fonts/HelveticaNowDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('../fonts/HelveticaNowDisplay-ExtBdIta.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ================== Monserrat ================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ================== Poppins ================== */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ================== Variables ================== */
+
+@theme {
+    /* Fuentes */
+    --font-helvetica: 'HelveticaNowDisplay', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* Colores primarios */
+    --color-green-primary: #8ca527;
+    --color-brown-primary: #533c16;
+    --color-brown-secondary: #5F3B13;
+    --color-white-primary: #cccccc;
+    --color-gray-primary: #606060;
+    --color-black-primary: #000000;
+}

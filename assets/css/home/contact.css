@@ -1,0 +1,58 @@
+#contact {
+    transition: all 0.3s ease;
+}
+
+.container-form-contact {
+    max-width: 800px;
+}
+
+.check-terms {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--color-gray-600);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.check-terms:checked {
+    background-color: var(--color-green-primary);
+    border-color: var(--color-green-primary);
+}
+
+.check-terms:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .container-form-contact-inputs, .container-form-button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .container-title-contact p {
+        font-size: 1.9rem;
+    }
+
+    .container-form-contact-inputs, .container-form-button {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .check-terms{
+        width: 30px;
+    }
+}

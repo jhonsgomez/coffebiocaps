@@ -1,0 +1,17 @@
+#about {
+    transition: all 0.3s ease;
+    background-color: #CCCCCC;
+}
+
+.container-about {
+    transition: all 0.3s ease;
+}
+
+.card-about {
+    border-color: #606060;
+}
+
+.vector-esquina-1 {
+    width: 200px;
+    margin-top: -11.7rem;
+}

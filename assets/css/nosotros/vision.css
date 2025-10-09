@@ -1,0 +1,19 @@
+#vision {
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-vision {
+        grid-template-columns: 1fr !important;
+    }
+
+    .image-2 {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .image-vision {
+        width: 180px;
+    }
+}

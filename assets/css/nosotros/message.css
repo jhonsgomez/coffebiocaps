@@ -1,0 +1,55 @@
+#message {
+    transition: all 0.3s ease;
+}
+
+.container-message-text {
+    width: 570px;
+}
+
+.comilla-1 {
+    top: -1.5rem;
+}
+
+.comilla-2 {
+    bottom: -1.5rem;
+    right: 3rem;
+}
+
+@media screen and (max-width: 640px) {
+    .container-message-text {
+        width: 90%;
+    }
+
+    .comilla-1 {
+        top: -1.5rem;
+        left: 3rem;
+    }
+
+    .comilla-2 {
+        bottom: -0.5rem;
+        right: 6rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .comilla-1  {
+        top: -2.5rem;
+        left: 0.8rem;
+    }
+
+    .comilla-2 {
+        right: 1.8rem;
+    }
+
+    .title-message {
+        font-size: 1.5rem;
+    }
+
+    .text-message {
+        font-size: 1.3rem;
+    }
+
+    .salto-linea {
+        display: none;
+    }
+}

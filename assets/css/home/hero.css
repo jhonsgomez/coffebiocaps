@@ -1,0 +1,67 @@
+#hero {
+    transition: all 0.3s ease;
+    min-height: 77vh;
+    margin-top: 80px;
+
+    background-image: url('../../img/header/portada/home.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-title {
+    max-width: 500px;
+    margin-left: 12%;
+    margin-top: -40px;
+}
+
+.title-hero {
+    font-size: 2.3rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-title {
+        max-width: 500px;
+        margin-top: -60px;
+    }
+
+    .title-hero, .button-hero {
+        font-size: 2rem;
+    }
+
+    .button-hero {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-title {
+        max-width: 400px;
+        margin-left: 20px;
+        padding: 0 20px;
+        margin-top: -60px;
+    }
+
+    .title-hero {
+        font-size: 1.8rem;
+    }
+
+    .button-hero {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-title {
+        max-width: 350px;
+        margin-top: -60px;
+    }
+
+    .title-hero {
+        font-size: 1.6rem;
+    }
+
+    .button-hero {
+        font-size: 1rem;
+    }
+}

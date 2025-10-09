@@ -1,0 +1,37 @@
+#footer {
+    transition: all 0.3s ease;
+}
+
+.info-contact-footer {
+    margin-left: -2rem;
+}
+
+.info-contact-footer p {
+    font-size: 1.1rem;
+}
+
+.vector-footer {
+    max-height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .info-contact-footer {
+        margin-left: -0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #footer {
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #footer {
+        padding-top: 6rem;
+    }
+
+    .info-contact-footer p {
+        font-size: 0.9rem;
+    }
+}

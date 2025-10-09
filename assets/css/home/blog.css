@@ -1,0 +1,123 @@
+#blog {
+    transition: all 0.3s ease;
+}
+
+.container-blog-bg-image {
+    background: url("../../img/blog/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.container-blog-bg-gray {
+    background-color: #CCCCCC;
+    min-height: 200px;
+}
+
+.vector-esquina-5 {
+    top: -9.5rem;
+}
+
+.container-blog-info {
+    margin-top: -4rem;
+    z-index: 10;
+}
+
+.container-blog-info-grid {
+    min-height: 120px;
+}
+
+.info-4 {
+    min-height: 183.99px;
+}
+
+.final-grid {
+    min-height: 85px;
+}
+
+.blog-button {
+    width: 32px;
+}
+
+.blog-text {
+    height: 100%;
+}
+
+.blog-text p {
+    margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 1645px) {
+    .info-4 {
+        min-height: 183.99px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .blog-grid-principal {
+        gap: 2rem;
+    }
+
+    .info-1,
+    .info-4 {
+        min-height: 215.98px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .blog-grid-principal {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+        padding: 3rem;
+    }
+
+    .container-blog-info {
+        margin-top: 0;
+        z-index: auto;
+    }
+
+    .info-1,
+    .info-4 {
+        min-height: 183.99px;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+
+    .info-1,
+    .info-3,
+    .info-4 {
+        min-height: 215.99px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-grid-principal {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .info-1,
+    .info-2,
+    .info-3,
+    .info-4 {
+        min-height: 160px;
+    }
+
+    .container-blog-info-grid {
+        min-height: 85px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .blog-grid-principal,
+    .container-blog-title {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .title-blog {
+        width: 50%;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+}

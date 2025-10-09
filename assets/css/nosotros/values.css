@@ -1,0 +1,64 @@
+#values {
+    background-image: url('../../img/values/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s ease;
+}
+
+.container-img-values {
+    top: 1rem;
+    left: 33%;
+}
+
+.container-img-values img {
+    max-width: 300px;
+}
+
+.img-features {
+    width: 100%;
+    height: auto;
+}
+
+.label-feature {
+    margin-top: -2px;
+}
+
+.vector-esquina-2 {
+    width: 200px;
+}
+
+@media screen and (max-width: 1280px) {
+    .container-img-values {
+        top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title-1 {
+        display: none;
+    }
+
+    .title-2 {
+        display: block;
+    }
+
+    .text-box {
+        margin-left: 0;
+    }
+
+    .text-box-content {
+        padding: 32px;
+    }
+
+    .container-img-values img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .title-2 {
+        margin-top: 1.5rem;;
+    }
+}
