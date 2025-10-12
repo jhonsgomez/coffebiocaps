@@ -1,0 +1,35 @@
+#faq {
+    transition: all 0.3s ease;
+    min-height: 77vh;
+    margin-top: 80px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.answer.active {
+    opacity: 1;
+    display: inline-table;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-questions {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .statement p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .final-message {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }    
+}
