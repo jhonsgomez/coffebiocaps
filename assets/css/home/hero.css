@@ -25,7 +25,8 @@
         margin-top: -60px;
     }
 
-    .title-hero, .button-hero {
+    .title-hero,
+    .button-hero {
         font-size: 2rem;
     }
 
@@ -54,11 +55,12 @@
 @media screen and (max-width: 640px) {
     .container-title {
         max-width: 350px;
-        margin-top: -60px;
+        margin-top: -170px;
+        margin-left: -5px;
     }
 
     .title-hero {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .button-hero {
@@ -66,6 +68,17 @@
     }
 
     #hero {
-        background-position: 30% center;
+        background-position: 64% center;
     }
+
+    .title-hero {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 640px) {
+
 }
