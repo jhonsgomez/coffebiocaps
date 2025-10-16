@@ -1,0 +1,345 @@
+/* =====================================================
+   POST CONTENT STYLES - Coffee Bio Caps
+   Estilos para el contenido generado desde WordPress
+   ===================================================== */
+
+/* Contenedor principal del post */
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Párrafos */
+.post-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Encabezados */
+.post-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.post-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Imágenes */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-content figure {
+    margin: 2rem 0;
+}
+
+.post-content figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #999;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Listas */
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    color: #666;
+}
+
+.post-content ul {
+    list-style-type: disc;
+}
+
+.post-content ol {
+    list-style-type: decimal;
+}
+
+.post-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.post-content li::marker {
+    color: #6B8E23;
+}
+
+/* Enlaces */
+.post-content a {
+    color: #6B8E23;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+    color: #556B2F;
+}
+
+/* Blockquotes (Citas) */
+.post-content blockquote {
+    border-left: 4px solid #6B8E23;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.post-content blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+.post-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Código */
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #c7254e;
+}
+
+.post-content pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Tablas */
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-content table th,
+.post-content table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-content table th {
+    background-color: #6B8E23;
+    color: white;
+    font-weight: 600;
+}
+
+.post-content table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Separadores */
+.post-content hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 3rem 0;
+}
+
+/* Botones y Call to Actions */
+.post-content .wp-block-button__link,
+.post-content .button {
+    display: inline-block;
+    background-color: #6B8E23;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+
+.post-content .wp-block-button__link:hover,
+.post-content .button:hover {
+    background-color: #556B2F;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(107, 142, 35, 0.3);
+}
+
+/* Galerías de WordPress */
+.post-content .wp-block-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.post-content .wp-block-gallery img {
+    margin: 0;
+}
+
+/* Videos embebidos */
+.post-content iframe,
+.post-content video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: block;
+}
+
+.post-content .wp-block-embed {
+    margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-content {
+        padding: 1rem 0.5rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .post-content h3 {
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+    }
+
+    .post-content blockquote {
+        padding-left: 1rem;
+        padding: 1rem;
+    }
+
+    .post-content table {
+        font-size: 0.875rem;
+    }
+
+    .post-content table th,
+    .post-content table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Animaciones */
+.post-content img,
+.post-content iframe,
+.post-content video {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Destacados especiales */
+.post-content .highlight,
+.post-content mark {
+    background-color: #fff9c4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+/* Strong y énfasis */
+.post-content strong {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.post-content em {
+    font-style: italic;
+    color: #555;
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #6B8E23;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #666;
+}

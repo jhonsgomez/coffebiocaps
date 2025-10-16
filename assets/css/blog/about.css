@@ -15,3 +15,7 @@
     width: 200px;
     margin-top: -11.7rem;
 }
+
+.container-posts {
+    min-height: 785px;
+}
