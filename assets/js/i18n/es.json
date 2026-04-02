@@ -1,0 +1,361 @@
+{
+    "nav": {
+        "about": "Nosotros",
+        "services": "Servicios",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "contact": "Contacto"
+    },
+    "home": {
+        "head": {
+            "title": "Cápsulas de Café Compostables y Biodegradables | Coffee Bio Caps"
+        },
+        "hero": {
+            "title": "CÁPSULAS DE",
+            "subtitle1": "CAFÉ COMPOSTABLES Y BIODEGRADABLES",
+            "subtitle2": "PARA NEGOCIOS CONSCIENTES",
+            "cta": "Conoce Más"
+        },
+        "about": {
+            "description": "En Coffee Bio Caps lideramos la revolución sostenible del café monodosis. Nuestras cápsulas de café compostables y biodegradables, compatibles con sistemas Nespresso, son la elección perfecta para hoteles, oficinas y marcas de café que buscan un proveedor confiable y comprometido con el planeta.",
+            "title": "El placer de tomar decisiones conscientes comienza con cada taza."
+        },
+        "services": {
+            "service1": {
+                "title": "Maquila de cápsulas de café",
+                "description": "personalizadas con tu marca, elaboradas bajo procesos sostenibles y con café colombiano de origen."
+            },
+            "service2": {
+                "title": "Alquiler de máquinas de café tipo Nespresso",
+                "description": "con mantenimiento incluido, para que tu servicio sea siempre premium."
+            },
+            "service3": {
+                "title": "Cápsulas de café sostenibles para hoteles y empresas,",
+                "description": "que combinan calidad, practicidad y compromiso ambiental."
+            }
+        },
+        "our_value": {
+            "title1": "NUESTRA<br>PROPUESTA<br><span class='font-extrabold'>DE VALOR</span>",
+            "title2": "NUESTRA PROPUESTA <span class='font-extrabold'>DE VALOR</span>",
+            "description1": "En Coffee Bio Caps no solo fabricamos cápsulas: cuidamos tu café, tu marca y el planeta.",
+            "description2": "Actuamos como un aliado B2B integral, ofreciendo soluciones que incluyen cápsulas ecológicas, máquinas de café y acompañamiento personalizado para asegurar la mejor experiencia en cada sorbo.",
+            "features": {
+                "feature1": "Ecológicas",
+                "feature2": "Compostable",
+                "feature3": "Sabor premium",
+                "feature4": "Fácil de preparación"
+            },
+            "question1": "¿QUIERES CÁPSULAS DE CAFÉ",
+            "question2": "COMPOSTABLES EN TU NEGOCIO?",
+            "cta_text": "Contáctanos hoy mismo y transforma tu servicio en una experiencia sostenible.",
+            "cta_button": "Saber más"
+        },
+        "solutions": {
+            "title": "SOLUCIONES SOSTENIBLES EN CÁPSULAS<br class='salto-linea-solutions'> DE CAFÉ COMPOSTABLES PARA TU NEGOCIO",
+            "description1": "En Coffee Bio Caps ofrecemos un portafolio integral diseñado para que hoteles, oficinas y marcas de café disfruten de la mejor experiencia en café con conciencia ambiental.",
+            "description2": "Nuestros servicios incluyen la maquila de cápsulas de café compostables, el alquiler de máquinas de café compatibles Nespresso y la entrega de cápsulas biodegradables de café que cuidan el planeta sin renunciar al sabor.",
+            "solution1": {
+                "title": "MAQUILA DE CÁPSULAS",
+                "description": "Con nuestro servicio de maquila de cápsulas de café compostables, acompañamos...",
+                "cta": "Ver servicio"
+            },
+            "solution2": {
+                "title": "ALQUILER DE MÁQUINAS",
+                "description": "Ofrecemos máquinas de café tipo Nespresso en modalidad de alquiler con mantenimiento... ",
+                "cta": "Ver servicio"
+            },
+            "phrase": "Transforma tu negocio con cápsulas de<br class='salto-linea-solutions-bottom'> café sostenibles y servicios integrales."
+        },
+        "packages": {
+            "package1": "<span class='font-extrabold text-2xl'>MANTENIMIENTO INCLUIDO:</span> nos encargamos del soporte técnico para que tu servicio nunca se detenga.",
+            "package2": "<span class='font-extrabold font-2xl'>SOLUCIÓN INTEGRAL PARA HOTELES Y OFICINAS:</span> máquina + cápsulas + acompañamiento en un solo proveedor.",
+            "package3": "<span class='font-extrabold text-2xl'>CÁPSULAS COMPOSTABLES Y BIODEGRADABLES:</span> un café premium con el menor impacto ambiental.",
+            "package4": "<span class='font-extrabold text-2xl'>COMPATIBILIDAD GARANTIZADA:</span> equipos adaptados a cápsulas tipo Nespresso compostables."
+        },
+        "blog": {
+            "categories": {
+                "category1": {
+                    "title": "SOSTENIBILIDAD:",
+                    "description": "Impacto positivo de las cápsulas compostables."
+                },
+                "category2": {
+                    "title": "INNOVACIÓN EN CAFÉ:",
+                    "description": "tendencias, tecnología y compatibilidad con Nespresso."
+                },
+                "category3": {
+                    "title": "HOTELES Y OFICINAS:",
+                    "description": "casos de éxito y experiencias B2B."
+                },
+                "category4": {
+                    "title": "MAQUILA Y PRODUCCIÓN:",
+                    "description": "oportunidades para marcas de café."
+                }
+            }
+        },
+        "contact": {
+            "title": "¡ESCRÍBENOS!",
+            "form": {
+                "fields": {
+                    "field1": "<input type='text' placeholder='Nombre completo' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium' />",
+                    "field2": "<input type='text' placeholder='Ciudad' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium' />",
+                    "field3": "<input type='email' placeholder='Correo electrónico' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium' />",
+                    "field4": "<input type='text' placeholder='Teléfono' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium' />",
+                    "field5": "<input type='text' placeholder='Empresa' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium' />",
+                    "field6": "<textarea name='message' id='message_form' cols='30' rows='4' placeholder='Mensaje' required class='w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium'></textarea>"
+                }
+            },
+            "terms": "Acepto términos y condiciones. Conozco las <span class='font-extrabold'><a href='#' target='_blank'>Políticas de Privacidad.</a></span>",
+            "submit_button": "Enviar"
+        }
+    },
+    "about_us": {
+        "head": {
+            "title": "Quiénes Somos | Fabricantes de Cápsulas de Café Compostables | Coffee Bio Caps"
+        },
+        "title": "SOMOS",
+        "subtitle1": "pioneros en cápsulas de café",
+        "subtitle2": "compostables en Colombia",
+        "about": {
+            "description": "En Coffee Bio Caps lideramos la revolución sostenible del café monodosis. Nuestras cápsulas de café <span class='font-semibold'>compostables y biodegradables</span>, compatibles con sistemas Nespresso, son la elección perfecta para hoteles, oficinas y marcas de café que buscan un proveedor confiable y comprometido con el planeta.",
+            "phrase": "El placer de tomar<br>decisiones conscientes<br>comienza con cada taza."
+        },
+        "mision": {
+            "title": "Nuestra Misión",
+            "description": "Cada día brindamos a <span class='font-semibold'>marcas de café y establecimientos</span> soluciones compostables de alta calidad, acompañándolos con tecnología limpia, asesoría personalizada y un respaldo confiable que asegura experiencias excepcionales para sus clientes."
+        },
+        "vision": {
+            "title": "Nuestra Visión",
+            "description": "Ser la marca líder que redefine el consumo de café en cápsulas compostables en el mundo, llevando <span class='font-semibold'>innovación sostenible</span> y el sabor del <span class='font-semibold'>café colombiano de origen</span> a cada mercado, oficina y hotel que cree en el poder de un café con propósito."
+        },
+        "our_values": {
+            "title": "Nuestros <span class='font-extrabold'>Valores</span>",
+            "values": {
+                "value1": {
+                    "title": "Sostenibilidad:",
+                    "description": "cuidamos el planeta en cada proceso."
+                },
+                "value2": {
+                    "title": "Flexibilidad:",
+                    "description": "adaptamos nuestras soluciones a cada cliente y mercado."
+                },
+                "value3": {
+                    "title": "Compromiso",
+                    "description": "y protección: tratamos tu café como si fuera nuestro."
+                },
+                "value4": {
+                    "title": "Trazabilidad:",
+                    "description": "garantizamos procesos transparentes desde el origen hasta la taza."
+                }
+            }
+        },
+        "value_proposition": {
+            "title1": "NUESTRA<br>PROPUESTA<br><span class='font-extrabold'>DE VALOR</span>",
+            "title2": "NUESTRA PROPUESTA <span class='font-extrabold'>DE VALOR</span>",
+            "description1": "No solo fabricamos cápsulas, construimos alianzas sostenibles.",
+            "description2": "Ofrecemos un servicio integral que incluye maquila de cápsulas de café, alquiler de máquinas compatibles Nespresso y acompañamiento técnico y comercial, para que cada cliente disfrute de un café con calidad, practicidad y conciencia ambiental.",
+            "features": {
+                "feature1": "Ecológicas",
+                "feature2": "Compostable",
+                "feature3": "Sabor premium",
+                "feature4": "Fácil de preparación"
+            },
+            "question1": "¿QUIERES CÁPSULAS DE CAFÉ",
+            "question2": "COMPOSTABLES EN TU NEGOCIO?",
+            "cta_text": "Hablemos y creemos juntos un impacto positivo.",
+            "cta_button": "Saber más"
+        }
+    },
+    "services": {
+        "head": {
+            "title": "Servicios de Café Sostenible | Cápsulas Compostables y Maquila | Coffee Bio Caps"
+        },
+        "hero": {
+            "title": "Soluciones sostenibles en cápsulas <span class='font-extrabold'>de café compostables para tu negocio</span>"
+        },
+        "service1": {
+            "phrase": "En Coffee Bio Caps ofrecemos un portafolio integral diseñado para que hoteles, oficinas y marcas de café disfruten de la mejor experiencia en café con conciencia ambiental.",
+            "title": "MAQUILA DE CÁPSULAS",
+            "description1": "En Coffee Bio Caps desarrollamos cápsulas de café compostables y biodegradables que combinan practicidad, sostenibilidad y el inconfundible sabor del café colombiano de origen.",
+            "description2": "Nuestras cápsulas están pensadas para hoteles, oficinas y marcas de café que buscan ofrecer una experiencia responsable sin comprometer la calidad.",
+            "benefits": {
+                "title": "BENEFICIOS",
+                "point1": "100% compostables y biodegradables: se desintegran naturalmente sin requerir procesos industriales.",
+                "point2": "Compatibles con Nespresso: cápsulas diseñadas para sistemas tipo Nespresso, garantizando practicidad y compatibilidad.",
+                "point3": "Café colombiano de origen: cuidamos la trazabilidad y calidad en cada paso del proceso.",
+                "point4": "Ideales para negocios conscientes: hoteles, restaurantes, oficinas y coworkings que desean diferenciarse con un café sostenible."
+            },
+            "value_proposition": {
+                "title": "PROPUESTA DE VALOR",
+                "point1": "Con Coffee Bio Caps, tu empresa no solo alquila una máquina de café: obtiene una solución completa y sostenible que combina practicidad, calidad y compromiso ambiental.",
+                "point2": "Cada taza de café servida se convierte en una experiencia consciente que refuerza la reputación de tu negocio."
+            }
+        },
+        "service2": {
+            "phrase": "Nuestros servicios incluyen la maquila de cápsulas de café compostables, el alquiler de máquinas de café compatibles Nespresso y la entrega de cápsulas biodegradables de café que cuidan el planeta sin renunciar al sabor.",
+            "title": "ALQUILER DE MÁQUINAS",
+            "description1": "En Coffee Bio Caps ofrecemos el servicio de alquiler de máquinas de café tipo Nespresso diseñado para hoteles, oficinas, coworkings y negocios que desean ofrecer una experiencia premium con cápsulas compostables y biodegradables.",
+            "description2": "Cada máquina está respaldada por nuestro acompañamiento técnico y el suministro de cápsulas de café sostenibles, garantizando un servicio confiable, práctico y responsable con el planeta.",
+            "benefits": {
+                "title": "BENEFICIOS",
+                "point1": "Mantenimiento incluido: nos encargamos del soporte técnico para que tu servicio nunca se detenga.",
+                "point2": "Cápsulas compostables y biodegradables: un café premium con el menor impacto ambiental.",
+                "point3": "Solución integral para hoteles y oficinas: máquina + cápsulas + acompañamiento en un solo proveedor.",
+                "point4": "Compatibilidad garantizada: equipos adaptados a cápsulas tipo Nespresso compostables."
+            },
+            "value_proposition": {
+                "title": "PROPUESTA DE VALOR",
+                "point1": "Nuestras cápsulas no solo contienen café: contienen un propósito",
+                "point2": "Cada cápsula de Coffee Bio Caps transforma el consumo cotidiano en una acción consciente que protege el planeta y fortalece la reputación de tu negocio como marca responsable."
+            }
+        },
+        "final_message": "Transforma tu negocio con cápsulas de café sostenibles y servicios integrales.",
+        "final_button": "Saber más"
+    },
+    "blog": {
+        "head": {
+            "title": "Blog sobre Cápsulas de Café Compostables y Sostenibilidad | Coffee Bio Caps"
+        },
+        "post": {
+            "head": {
+                "title": "Posts | Coffee Bio Caps"
+            },
+            "error": {
+                "back": "<i class='fas fa-arrow-left'></i> Volver al blog"
+            },
+            "breadcrumb": {
+                "home": "Inicio",
+                "blog": "Blog"
+            },
+            "author": "Por",
+            "back": "Volver al blog",
+            "copy_link": "Copiar enlace",
+            "share": "Compartir este artículo:",
+            "loading": "Cargando post..."
+        },
+        "hero": {
+            "title": "<span class='font-extrabold'>Blog sobre cápsulas</span> <br> de <span class='font-extrabold'>café compostables</span>, sostenibilidad e innovación"
+        },
+        "about": {
+            "description1": "En el blog de Coffee Bio Caps compartimos conocimiento, tendencias y buenas prácticas sobre el mundo del café en monodosis.",
+            "description2": "Aquí encontrarás artículos especializados sobre cápsulas de café compostables y biodegradables, innovación en maquila de cápsulas de café, y casos de éxito en hoteles y oficinas que ya disfrutan de soluciones sostenibles.",
+            "mission": "Queremos educar, inspirar y acompañar a negocios y marcas en la transición hacia un consumo responsable y consciente."
+        },
+        "loading_posts": "Cargando posts...",
+        "no_posts": "No hay posts publicados aún.",
+        "retry": "Intentar nuevamente",
+        "previous": "← Anterior",
+        "next": "Siguiente →",
+        "page": "Página",
+        "of": "de",
+        "see_more": "Saber más"
+    },
+    "faq": {
+        "head": {
+            "title": "Preguntas Frecuentes | Cápsulas de Café Compostables | Coffee Bio Caps"
+        },
+        "title1": "Preguntas",
+        "title2": "Frecuentes",
+        "intro": "En Coffee Bio Caps queremos que tengas toda la información clara antes de dar el paso hacia un servicio de café más sostenible. <br> Aquí respondemos las dudas más comunes sobre nuestras cápsulas de café compostables y biodegradables, el servicio de maquila de cápsulas de café, el alquiler de máquinas compatibles Nespresso y los beneficios para hoteles, oficinas y marcas.",
+        "questions": {
+            "question1": {
+                "question": "¿Qué son las cápsulas de café compostables?",
+                "answer": "Son cápsulas fabricadas con materiales que se desintegran de forma natural en ambientes domésticos o industriales, sin generar residuos plásticos. Con Coffee Bio Caps, tus clientes disfrutan de café premium con un impacto positivo en el planeta."
+            },
+            "question2": {
+                "question": "¿En qué se diferencian de las cápsulas biodegradables?",
+                "answer": "Ambas reducen el impacto ambiental, pero las cápsulas compostables están diseñadas para convertirse en abono en un tiempo más corto, mientras que lo “biodegradable” puede tardar más en desintegrarse."
+            },
+            "question3": {
+                "question": "¿Son compatibles con máquinas Nespresso?",
+                "answer": "Sí. Nuestras cápsulas compostables son compatibles con sistemas tipo Nespresso, garantizando comodidad y la misma calidad de sabor."
+            },
+            "question4": {
+                "question": "¿Qué es la maquila de cápsulas de café?",
+                "answer": "Es un servicio en el que producimos cápsulas de café compostables con tu propia marca. En Coffee Bio Caps personalizamos el diseño y aseguramos procesos de trazabilidad para que tu producto llegue al mercado con respaldo sostenible."
+            },
+            "question5": {
+                "question": "¿Por qué elegir cápsulas de café sostenibles para hoteles y oficinas?",
+                "answer": "Porque además de ofrecer un café de calidad premium, transmites un mensaje de responsabilidad ambiental a tus clientes y colaboradores, diferenciando tu servicio con un valor agregado."
+            },
+            "question6": {
+                "question": "¿Puedo alquilar máquinas de café junto con las cápsulas?",
+                "answer": "Sí. Ofrecemos el servicio integral de alquiler de máquinas compatibles Nespresso, mantenimiento incluido, junto con el suministro de nuestras cápsulas compostables."
+            },
+            "question7": {
+                "question": "¿El sabor del producto consumible se ve afectado por las cápsulas, en comparación con otros productos alternativos de Nespresso?",
+                "answer": "El sabor de la bebida no se ve afectado de ninguna manera por las cápsulas. Laboratorios no afiliados lo han demostrado a través de pruebas organolépticas y de migración. Respetamos la normativa EU DIN 10955."
+            },
+            "question8": {
+                "question": "¿Son las cápsulas Coffee Caps cápsulas barrera de oxígeno?",
+                "answer": "Sí, las cápsulas Coffee Caps son barrera de oxígeno. La tasa de transmisión de oxígeno es de 0.003 cm3/ (empaquetado. día 0,21) a 23°C y 50% H.R. ext / 50% H.R. int."
+            },
+            "question9": {
+                "question": "¿Cuál es la vida útil de las cápsulas compostables domésticas Coffee Caps y cómo difiere esto de las cápsulas de plástico y aluminio?",
+                "answer": "La vida útil de las cápsulas Coffee Caps es de 2 años a partir de la fecha de fabricación, que es similar a las cápsulas de aluminio y plástico. Ten en cuenta que esta no es la vida útil del producto final, que será diferente."
+            },
+            "question10": {
+                "question": "¿En qué se diferencian las cápsulas compostables domésticas Coffee Caps de otras cápsulas compostables en el mercado?",
+                "answer": "Un aspecto importante de Coffee Caps es que está certificado como compostable en casa y 100% orgánico (derivado de materia viva). Puedes poner tu cápsula en tu compost doméstico y se degradará completamente en 6 meses."
+            },
+            "question11": {
+                "question": "¿Por qué las cápsulas compostables domésticas Coffee Caps son mejores que las cápsulas de aluminio reciclables?",
+                "answer": "Transformar la bauxita en aluminio requiere enormes cantidades de energía y luego, convertir el aluminio reciclable en cápsulas nuevamente conlleva un gran costo energético de carbono. El aluminio tiene problemas ambientales bien documentados, tanto en los ecosistemas acuáticos como terrestres. Al utilizar cápsulas Coffee Caps compostables en casa, estás reduciendo directamente tus residuos domésticos de la manera más ecológica posible: de la naturaleza a la naturaleza."
+            },
+            "question12": {
+                "question": "¿Con qué máquinas de consumo son compatibles las cápsulas compostables domésticas Coffee Caps?",
+                "answer": "Nuestras Coffee Caps son compatibles con todas las máquinas Nespresso desde 2010."
+            },
+            "question13": {
+                "question": "¿De qué están hechas las Coffee Caps?",
+                "answer": "Las Coffee Caps están hechas de biopolímeros y materia orgánica."
+            },
+            "question14": {
+                "question": "¿Qué porcentaje del material de la cápsula proviene de fuentes sostenibles?",
+                "answer": "Las Coffee Caps son 100% biobasadas y provienen en su totalidad de fuentes sostenibles. Coffee Caps están hechas de biopolímeros y materia orgánica."
+            },
+            "question15": {
+                "question": "¿Contienen las Coffee Caps algún plástico de origen fósil, BPA / derivados de BPA o PFC?",
+                "answer": "Las Coffee Caps no contienen ningún tipo de plástico de origen petrolero ni BTA o PFC."
+            },
+            "question16": {
+                "question": "¿Son las cápsulas Coffee Caps veganas?",
+                "answer": "Sí, las cápsulas son veganas."
+            },
+            "question17": {
+                "question": "¿Qué certificaciones tiene Coffee Caps?",
+                "answer": "Las Coffee Caps tienen una clasificación de 4 estrellas OK Biobased de la entidad notificada TuV Austria. Esta es la calificación de calidad más alta posible."
+            },
+            "question18": {
+                "question": "¿Son biodegradables las Coffee Caps?",
+                "answer": "Sí, las cápsulas Coffee Caps son biodegradables mediante compostaje doméstico."
+            },
+            "question19": {
+                "question": "¿Son las cápsulas Coffee Caps compostables en casa?",
+                "answer": "Sí."
+            },
+            "question20": {
+                "question": "¿Cuál es la diferencia entre compostable industrial y compostable en casa?",
+                "answer": "Las plantas de compostaje industriales manejan cantidades muy grandes, entre 2000 y 10,000 toneladas. Certificado como “compostable” a través de una planta industrial significa que se degradará en 3 meses debido a la alta temperatura y humedad biológica. En un compost casero, la temperatura y la humedad son más bajas debido a que hay menos residuos biológicos. Los productos certificados como compostables en casa tardan hasta 6 meses en degradarse."
+            },
+            "question21": {
+                "question": "¿Cuál es la mejor manera de desechar las cápsulas compostables en casa de Coffee Caps?",
+                "answer": "La mejor solución es tirar tu Coffee Caps en el compost casero o el compost comunitario."
+            },
+            "question22": {
+                "question": "¿Las cápsulas compostables en casa de Coffee Caps pueden ir en el contenedor de residuos orgánicos?",
+                "answer": "Sí."
+            }
+        },
+        "final_message": "¿Tienes más preguntas sobre nuestras cápsulas de café compostables o servicios?",
+        "final_message_contact": "Contáctanos y un asesor especializado te ayudará a diseñar la solución perfecta para tu negocio.",
+        "final_message_button": "Saber más"
+    },
+    "message": {
+        "title": "PIONEROS EN CÁPSULAS DE CAFÉ<br class='salto-linea'> COMPOSTABLES EN COLOMBIA",
+        "description": "El placer de tomar decisiones<br> conscientes guía cada paso<br> de lo que hacemos."
+    },
+    "footer": {
+        "office_location": "Oficina principal: Bogotá, Colombia.",
+        "copyright": "Reservados todos los derechos<br> COFFEE BIOCAPS 2025."
+    }
+}

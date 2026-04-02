@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO -->
-    <title>Cápsulas de Café Compostables y Biodegradables | Coffee Bio Caps</title>
+    <title data-i18n="home.head.title">Cápsulas de Café Compostables y Biodegradables | Coffee Bio Caps</title>
     <meta name="description"
         content="Cápsulas de café compostables y biodegradables para hoteles, oficinas y negocios conscientes. Maquila de cápsulas y alquiler de máquinas compatibles Nespresso.">
     <meta name="keywords"
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="stylesheet" href="assets/css/base/nav.css">
     <link rel="stylesheet" href="assets/css/base/footer.css">
+    <link rel="stylesheet" href="assets/css/base/i18n.css">
 
     <link rel="stylesheet" href="assets/css/home/hero.css">
     <link rel="stylesheet" href="assets/css/home/about.css">
@@ -106,16 +107,32 @@
                 <div class="flex items-center justify-between space-x-6">
                     <!-- Desktop Navigation -->
                     <div class="hidden lg:flex items-center space-x-8">
+
+                        <div class="lang-switcher" id="switcher">
+                            <div class="lang-slider" id="lang-slider"></div>
+                            <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                                <img src="assets/img/i18n/colombia.png" alt=""> ES
+                            </button>
+                            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                                <img src="assets/img/i18n/united-kingdom.png" alt=""> EN
+                            </button>
+                        </div>
+
                         <a href="nosotros/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.about">Nosotros</a>
                         <a href="servicios/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.services">Servicios</a>
                         <a href="blog/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.blog">Blog</a>
                         <a href="faq/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.faq">FAQ</a>
                         <a href="#contact"
-                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media Icons - Desktop -->
@@ -145,17 +162,33 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu lg:hidden py-4">
                 <div class="flex flex-col justify-center space-y-4 px-8">
+
+                    <div class="lang-switcher" id="switcher">
+                        <div class="lang-slider" id="lang-slider"></div>
+                        <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                            <img src="assets/img/i18n/colombia.png" alt=""> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                            <img src="assets/img/i18n/united-kingdom.png" alt=""> EN
+                        </button>
+                    </div>
+
                     <a href="nosotros/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.about">Nosotros</a>
                     <a href="servicios/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.services">Servicios</a>
                     <a href="blog/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.blog">Blog</a>
                     <a href="faq/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.faq">FAQ</a>
                     <div>
                         <a href="#contact"
-                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media - Mobile -->
@@ -183,14 +216,17 @@
         <!-- ====================== HERO SECTION ====================== -->
         <section id="hero" class="flex justify-start items-center">
             <div class="container-title animate-fadeInUp">
-                <p class="title-hero text-brown-primary leading-tight mb-6 font-helvetica font-light">
+                <p class="title-hero text-brown-primary leading-tight mb-6 font-helvetica font-light"
+                    data-i18n="home.hero.title">
                     CÁPSULAS DE <br>
-                    <span class="text-brown-primary font-bold">CAFÉ COMPOSTABLES Y BIODEGRADABLES </span>
-                    <span class="text-brown-primary"> PARA NEGOCIOS CONSCIENTES</span>
+                    <span class="text-brown-primary font-bold" data-i18n="home.hero.subtitle1">CAFÉ COMPOSTABLES Y
+                        BIODEGRADABLES </span>
+                    <span class="text-brown-primary" data-i18n="home.hero.subtitle2"> PARA NEGOCIOS CONSCIENTES</span>
                 </p>
 
                 <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });"
-                    class="button-hero bg-green-primary text-white px-8 py-3 rounded-full font-bold text-lg hover-scale shadow-lg mt-4 cursor-pointer font-helvetica">
+                    class="button-hero bg-green-primary text-white px-8 py-3 rounded-full font-bold text-lg hover-scale shadow-lg mt-4 cursor-pointer font-helvetica"
+                    data-i18n="home.hero.cta">
                     Conoce Más
                 </button>
             </div>
@@ -203,7 +239,8 @@
             <div class="container-about container mx-auto px-4 sm:px-6 lg:px-8 animate-fadeInUp">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
                     <div class="card-about border-3 rounded-3xl px-4 py-6 lg:px-11 shadow-lg hover-scale">
-                        <p class="text-gray-primary text-base sm:text-lg leading-5 font-helvetica font-bold">
+                        <p class="text-gray-primary text-base sm:text-lg leading-5 font-helvetica font-bold"
+                            data-i18n="home.about.description">
                             En Coffee Bio Caps lideramos la revolución sostenible del café monodosis. Nuestras cápsulas
                             de café <span class="font-semibold">compostables y biodegradables</span>, compatibles con
                             sistemas Nespresso, son la elección perfecta para hoteles, oficinas y marcas de café que
@@ -212,7 +249,8 @@
                     </div>
                     <div class="text-center lg:text-left lg:ml-12">
                         <h2 class="text-2xl font-bold leading-8 lg:text-3xl md:text-3xl">
-                            <span class="font-helvetica italic text-brown-primary">El placer de tomar<br>decisiones
+                            <span class="font-helvetica italic text-brown-primary" data-i18n="home.about.title">El
+                                placer de tomar<br>decisiones
                                 conscientes<br>comienza con cada taza.</span>
                         </h2>
                     </div>
@@ -230,10 +268,11 @@
                             <img src="assets/img/services/vaso.png" alt="Servicio 1" class="img-services service-1">
                         </div>
                         <div>
-                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6">Maquila de<br>
+                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6" data-i18n="home.services.service1.title">Maquila de<br>
                                 cápsulas
                                 de café</h3>
-                            <p class="font-helvetica font-extrabold text-brown-primary leading-5">personalizadas con tu
+                            <p class="font-helvetica font-extrabold text-brown-primary leading-5" data-i18n="home.services.service1.description">
+                                personalizadas con tu
                                 marca, elaboradas bajo procesos
                                 sostenibles y con café colombiano de origen.</p>
                         </div>
@@ -244,10 +283,11 @@
                             <img src="assets/img/services/cafetera.png" alt="Servicio 1" class="img-services service-2">
                         </div>
                         <div>
-                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6">Alquiler de<br>
+                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6" data-i18n="home.services.service2.title">Alquiler de<br>
                                 máquinas
                                 de café tipo Nespresso</h3>
-                            <p class="font-helvetica font-extrabold text-brown-primary leading-5">con mantenimiento
+                            <p class="font-helvetica font-extrabold text-brown-primary leading-5" data-i18n="home.services.service2.description">
+                                con mantenimiento
                                 incluido, para que tu servicio sea siempre premium.</p>
                         </div>
                     </div>
@@ -257,10 +297,11 @@
                             <img src="assets/img/services/hoja.png" alt="Servicio 1" class="img-services service-3">
                         </div>
                         <div>
-                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6">Cápsulas de
+                            <h3 class="text-2xl mb-2 font-helvetica italic text-brown-primary leading-6" data-i18n="home.services.service3.title">Cápsulas de
                                 café
                                 sostenibles para hoteles y empresas,</h3>
-                            <p class="font-helvetica font-extrabold text-brown-primary leading-5">que combinan calidad,
+                            <p class="font-helvetica font-extrabold text-brown-primary leading-5" data-i18n="home.services.service3.description">
+                                que combinan calidad,
                                 practicidad y compromiso ambiental.</p>
                         </div>
                     </div>
@@ -285,13 +326,15 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 lg:mb-12 items-center animate-fadeInUp">
                     <div class="lg:col-span-1">
                         <h2
-                            class="text-3xl sm:text-3xl lg:text-5xl text-white leading-tight font-helvetica font-light title-1">
+                            class="text-3xl sm:text-3xl lg:text-5xl text-white leading-tight font-helvetica font-light title-1"
+                            data-i18n="home.our_value.title1">
                             NUESTRA<br>
                             PROPUESTA<br>
                             <span class="font-extrabold">DE VALOR</span>
                         </h2>
                         <h2
-                            class="text-3xl sm:text-5xl lg:text-5xl text-white leading-tight text-center font-helvetica font-light title-2 hidden">
+                            class="text-3xl sm:text-5xl lg:text-5xl text-white leading-tight text-center font-helvetica font-light title-2 hidden"
+                            data-i18n="home.our_value.title2">
                             NUESTRA PROPUESTA <span class="font-extrabold">DE VALOR</span>
                         </h2>
                     </div>
@@ -300,10 +343,11 @@
                         <div class="col-span-2 py-8 pl-50 pr-8 text-box-content">
 
                             <p class="text-white text-base sm:text-lg leading-5 font-helvetica font-bold">
-                                <span class="font-bold">En Coffee Bio Caps no solo fabricamos cápsulas: cuidamos tu
+                                <span class="font-bold" data-i18n="home.our_value.description1">En Coffee Bio Caps no solo fabricamos cápsulas: cuidamos tu
                                     café, tu marca y el planeta.</span>
                             </p>
-                            <p class="text-white text-base sm:text-lg leading-5 mt-4 font-helvetica font-bold">
+                            <p class="text-white text-base sm:text-lg leading-5 mt-4 font-helvetica font-bold"
+                                data-i18n="home.our_value.description2">
                                 Actuamos como un aliado B2B integral, ofreciendo soluciones que incluyen cápsulas
                                 ecológicas, máquinas de café y acompañamiento personalizado para asegurar la mejor
                                 experiencia en cada sorbo.
@@ -320,7 +364,10 @@
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
                             <span
-                                class="text-brown-primary font-bold text-base text-md font-helvetica">Ecológicas</span>
+                                class="text-brown-primary font-bold text-base text-md font-helvetica"
+                                data-i18n="home.our_value.features.feature1">
+                                Ecológicas
+                            </span>
                         </div>
                     </div>
 
@@ -331,7 +378,10 @@
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
                             <span
-                                class="text-brown-primary font-bold text-base text-md font-helvetica">Compostable</span>
+                                class="text-brown-primary font-bold text-base text-md font-helvetica"
+                                data-i18n="home.our_value.features.feature2">
+                                Compostable
+                            </span>
                         </div>
                     </div>
 
@@ -341,8 +391,9 @@
                             <img src="assets/img/values/semilla.png" alt="Sabor premium" class="img-features">
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
-                            <span class="text-brown-primary font-bold text-base text-md font-helvetica">Sabor
-                                premium</span>
+                            <span class="text-brown-primary font-bold text-base text-md font-helvetica"
+                                data-i18n="home.our_value.features.feature3">
+                                Sabor premium</span>
                         </div>
                     </div>
 
@@ -352,28 +403,34 @@
                             <img src="assets/img/values/taza.png" alt="Fácil de preparación" class="img-features">
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
-                            <span class="text-brown-primary font-bold text-base text-md font-helvetica">Fácil de
-                                preparación</span>
+                            <span class="text-brown-primary font-bold text-base text-md font-helvetica"
+                                data-i18n="home.our_value.features.feature4">
+                                Fácil de preparación
+                            </span>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center max-w-4xl mx-auto animate-fadeInUp">
-                    <h3 class="text-white text-2xl sm:text-3xl lg:text-3xl font-normal mb-3 leading-5 font-helvetica">
+                    <h3 class="text-white text-2xl sm:text-3xl lg:text-3xl font-normal mb-3 leading-5 font-helvetica"
+                        data-i18n="home.our_value.question1">
                         ¿QUIERES CÁPSULAS DE CAFÉ
                     </h3>
                     <h3
-                        class="text-white text-3xl sm:text-3xl lg:text-3xl font-extrabold mb-6 leading-9 font-helvetica">
+                        class="text-white text-3xl sm:text-3xl lg:text-3xl font-extrabold mb-6 leading-9 font-helvetica"
+                        data-i18n="home.our_value.question2">
                         COMPOSTABLES EN TU NEGOCIO?
                     </h3>
 
                     <p
-                        class="text-white text-xl sm:text-3xl lg:text-3xl mb-3 leading-5 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-9 font-helvetica">
+                        class="text-white text-xl sm:text-3xl lg:text-3xl mb-3 leading-5 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-9 font-helvetica"
+                        data-i18n="home.our_value.cta_text">
                         Contáctanos hoy mismo y transforma<br> tu servicio en una experiencia sostenible.
                     </p>
 
                     <button onclick="window.location.href='nosotros/'"
-                        class="bg-green-primary text-white px-6 py-3 rounded-full font-bold text-lg sm:text-xl btn-hover shadow-2xl mt-6 font-helvetica cursor-pointer hover-scale">
+                        class="bg-green-primary text-white px-6 py-3 rounded-full font-bold text-lg sm:text-xl btn-hover shadow-2xl mt-6 font-helvetica cursor-pointer hover-scale"
+                        data-i18n="home.our_value.cta_button">
                         Saber más
                     </button>
                 </div>
@@ -385,7 +442,8 @@
             <div class="container mx-auto animate-fadeInUp">
                 <div>
                     <p
-                        class="title-message text-2xl sm:text-3xl lg:text-4xl text-center font-helvetica font-extrabold text-brown-secondary">
+                        class="title-message text-2xl sm:text-3xl lg:text-4xl text-center font-helvetica font-extrabold text-brown-secondary"
+                        data-i18n="message.title">
                         PIONEROS EN
                         CÁPSULAS DE CAFÉ<br class="salto-linea"> COMPOSTABLES EN COLOMBIA</p>
                 </div>
@@ -397,7 +455,8 @@
                         class="comilla-2 absolute transform w-10 sm:w-14 lg:w-18 h-auto z-10" />
 
                     <p
-                        class="text-message text-2xl sm:text-3xl lg:text-3xl text-center font-helvetica text-gray-500 italic">
+                        class="text-message text-2xl sm:text-3xl lg:text-3xl text-center font-helvetica text-gray-500 italic"
+                        data-i18n="message.description">
                         El placer de tomar
                         decisiones<br> conscientes guía cada paso<br> de lo que hacemos.</p>
                 </div>
@@ -410,14 +469,16 @@
                 <div class="pt-12 pb-10 px-10 sm:px-14 md:px-14 lg:px-14 xl:px-14">
                     <div class="container-solutions-title">
                         <p
-                            class="title-solutions leading-12 text-center font-helvetica font-extrabold text-brown-secondary">
+                            class="title-solutions leading-12 text-center font-helvetica font-extrabold text-brown-secondary"
+                            data-i18n="home.solutions.title">
                             SOLUCIONES SOSTENIBLES EN CÁPSULAS<br class="salto-linea-solutions"> DE CAFÉ COMPOSTABLES
                             PARA TU NEGOCIO</p>
                     </div>
                     <div class="container-info-solutions grid grid-cols-2 gap-4 mt-10">
                         <div class="col-span-1">
                             <div class="text-left-solutions text-center px-2 sm:px-8 md:px-8 lg:px-8 xl:px-8">
-                                <p class="font-helvetica font-bold text-gray-primary text-lg leading-5">En Coffee Bio
+                                <p class="font-helvetica font-bold text-gray-primary text-lg leading-5"
+                                data-i18n="home.solutions.description1">En Coffee Bio
                                     Caps ofrecemos un portafolio integral diseñado
                                     para que hoteles, oficinas y marcas de café disfruten de la
                                     mejor experiencia en café con conciencia ambiental.</p>
@@ -431,14 +492,14 @@
                                 <div class="text-img-solutions px-10 pt-4 pb-5">
                                     <div class="title">
                                         <p
-                                            class="font-helvetica text-white font-extrabold mb-3 sm:mb-3 md:mb-3 lg:mb-2 xl:mb-0 text-2xl xl:text-left lg:text-center md:text-center sm:text-center text-center">
+                                            class="font-helvetica text-white font-extrabold mb-3 sm:mb-3 md:mb-3 lg:mb-2 xl:mb-0 text-2xl xl:text-left lg:text-center md:text-center sm:text-center text-center" data-i18n="home.solutions.solution1.title">
                                             MAQUILA DE CÁPSULAS
                                         </p>
                                     </div>
 
                                     <div class="grid lg:grid-cols-1 xl:grid-cols-2 gap-4 lg:mt-3 xl:mt-4 items-center">
                                         <div class="col-span-1">
-                                            <p class="font-helvetica text-sm leading-4 text-white lg:mb-3">Con nuestro
+                                            <p class="font-helvetica text-sm leading-4 text-white lg:mb-3" data-i18n="home.solutions.solution1.description">Con nuestro
                                                 servicio
                                                 de maquila
                                                 de cápsulas de café
@@ -447,7 +508,8 @@
                                         <div
                                             class="col-span-1 text-center sm:text-center md:text-center lg:text-center xl:text-right">
                                             <button onclick="window.location.href='servicios/'"
-                                                class="bg-green-primary text-white px-6 py-2 rounded-full font-bold text-lg btn-hover shadow-2xl font-helvetica cursor-pointer hover-scale">
+                                                class="bg-green-primary text-white px-6 py-2 rounded-full font-bold text-lg btn-hover shadow-2xl font-helvetica cursor-pointer hover-scale"
+                                                data-i18n="home.solutions.solution1.cta">
                                                 Ver servicio
                                             </button>
                                         </div>
@@ -457,7 +519,9 @@
                         </div>
                         <div class="col-span-1 info-right">
                             <div class="text-right-solutions text-center px-2 sm:px-8 md:px-8 lg:px-8 xl:px-8">
-                                <p class="font-helvetica font-bold text-gray-primary text-lg leading-5">Nuestros
+                                <p class="font-helvetica font-bold text-gray-primary text-lg leading-5"
+                                    data-i18n="home.solutions.description2">
+                                    Nuestros
                                     servicios incluyen la maquila de cápsulas de café
                                     compostables, el alquiler de máquinas de café compatibles
                                     Nespresso y la entrega de cápsulas biodegradables de café
@@ -472,7 +536,7 @@
                                 <div class="text-img-solutions px-10 pt-4 pb-5">
                                     <div class="title">
                                         <p
-                                            class="font-helvetica text-white font-extrabold mb-3 sm:mb-3 md:mb-3 lg:mb-2 xl:mb-0 text-2xl xl:text-left lg:text-center md:text-center sm:text-center text-center">
+                                            class="font-helvetica text-white font-extrabold mb-3 sm:mb-3 md:mb-3 lg:mb-2 xl:mb-0 text-2xl xl:text-left lg:text-center md:text-center sm:text-center text-center" data-i18n="home.solutions.solution2.title">
                                             ALQUILER DE
                                             MÁQUINAS</p>
                                     </div>
@@ -480,7 +544,8 @@
                                     <div
                                         class="grid lg:grid-cols-1 xl:grid-cols-2 gap-4 lg:mt-3 xl:mt-4 items-center xl:pb-4">
                                         <div class="col-span-1">
-                                            <p class="font-helvetica text-sm leading-4 text-white"> Ofrecemos máquinas
+                                            <p class="font-helvetica text-sm leading-4 text-white" data-i18n="home.solutions.solution2.description">
+                                                Ofrecemos máquinas
                                                 de café
                                                 tipo Nespresso en modalidad
                                                 de alquiler con mantenimiento... </p>
@@ -488,7 +553,8 @@
                                         <div
                                             class="col-span-1 text-center sm:text-center md:text-center lg:text-center xl:text-right">
                                             <button onclick="window.location.href='servicios/'"
-                                                class="bg-green-primary text-white px-6 py-2 rounded-full font-bold text-lg btn-hover shadow-2xl font-helvetica cursor-pointer hover-scale">
+                                                class="bg-green-primary text-white px-6 py-2 rounded-full font-bold text-lg btn-hover shadow-2xl font-helvetica cursor-pointer hover-scale"
+                                                data-i18n="home.solutions.solution2.cta">
                                                 Ver servicio
                                             </button>
                                         </div>
@@ -499,7 +565,8 @@
                     </div>
                     <div class="container-solutions-botom mt-12">
                         <p
-                            class="font-helvetica text-gray-primary text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-center font-extrabold italic">
+                            class="font-helvetica text-gray-primary text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-center font-extrabold italic"
+                            data-i18n="home.solutions.phrase">
                             Transforma tu negocio con cápsulas de<br class="salto-linea-solutions-bottom">
                             café sostenibles y servicios integrales.</p>
                     </div>
@@ -516,7 +583,7 @@
                             <img src="assets/img/packages/package-1.png" alt="Package 1" class="package-img mx-auto">
                         </div>
                         <div class="col-span-2 container-packages-info px-10">
-                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6"><span
+                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6" data-i18n="home.packages.package1"><span
                                     class="font-extrabold text-2xl">MANTENIMIENTO INCLUIDO:</span> nos
                                 encargamos del soporte técnico para que tu
                                 servicio nunca se detenga.</p>
@@ -528,7 +595,7 @@
                             <img src="assets/img/packages/package-2.png" alt="Package 2" class="package-img mx-auto">
                         </div>
                         <div class="container-packages-info px-10">
-                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6"><span
+                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6" data-i18n="home.packages.package2"><span
                                     class="font-extrabold font-2xl">SOLUCIÓN
                                     INTEGRAL PARA
                                     HOTELES Y OFICINAS:</span> máquina +
@@ -542,7 +609,7 @@
                             <img src="assets/img/packages/package-3.png" alt="Package 3" class="package-img mx-auto">
                         </div>
                         <div class="container-packages-info px-10">
-                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6"><span
+                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6" data-i18n="home.packages.package3"><span
                                     class="font-extrabold text-2xl">CÁPSULAS
                                     COMPOSTABLES Y
                                     BIODEGRADABLES:</span> un café premium
@@ -555,7 +622,7 @@
                             <img src="assets/img/packages/package-4.png" alt="Package 4" class="package-img mx-auto">
                         </div>
                         <div class="container-packages-info px-10">
-                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6"><span
+                            <p class="font-helvetica text-xl font-bold text-gray-primary leading-6" data-i18n="home.packages.package4"><span
                                     class="font-extrabold text-2xl">COMPATIBILIDAD GARANTIZADA:</span> equipos adaptados
                                 a
                                 cápsulas
@@ -587,7 +654,7 @@
                     class="vector-esquina-5 absolute left-0 transform h-auto z-10" />
                 <div class="blog-grid-principal grid grid-cols-4 gap-x-14 items-center px-14">
                     <div class="container-blog-info info-1 col-span-1 bg-white rounded-xl p-4 shadow-xl">
-                        <p class="font-helvetica font-extrabold text-2xl text-black">SOSTENIBILIDAD:</p>
+                        <p class="font-helvetica font-extrabold text-2xl text-black" data-i18n="home.blog.categories.category1.title">SOSTENIBILIDAD:</p>
                         <div class="container-blog-info-grid grid grid-cols-3 items-end relative">
                             <button onclick="window.location.href = 'blog/'"
                                 class="bg-green-primary rounded cursor-pointer hover-scale absolute right-0 shadow-lg"
@@ -595,7 +662,7 @@
                                 <img src="assets/img/blog/row.png" alt="Row Button" class="mx-auto blog-button">
                             </button>
                             <div class="blog-text col-span-2 mt-2 flex justify-start items-start">
-                                <p class="font-helvetica text-gray-primary font-bold leading-5">Impacto positivo
+                                <p class="font-helvetica text-gray-primary font-bold leading-5" data-i18n="home.blog.categories.category1.description">Impacto positivo
                                     de las cápsulas
                                     compostables. </p>
                             </div>
@@ -603,7 +670,7 @@
                         </div>
                     </div>
                     <div class="container-blog-info info-2 col-span-1 bg-white rounded-xl p-4 shadow-xl">
-                        <p class="font-helvetica font-extrabold text-2xl text-black">INNOVACIÓN EN CAFÉ:</p>
+                        <p class="font-helvetica font-extrabold text-2xl text-black" data-i18n="home.blog.categories.category2.title">INNOVACIÓN EN CAFÉ:</p>
                         <div class="container-blog-info-grid grid grid-cols-3 items-end relative">
                             <button onclick="window.location.href = 'blog/'"
                                 class="bg-green-primary rounded cursor-pointer hover-scale absolute right-0 shadow-lg"
@@ -611,7 +678,7 @@
                                 <img src="assets/img/blog/row.png" alt="Row Button" class="mx-auto blog-button">
                             </button>
                             <div class="blog-text col-span-2 mt-2 flex justify-start items-start">
-                                <p class="font-helvetica text-gray-primary font-bold leading-5">tendencias, tecnología
+                                <p class="font-helvetica text-gray-primary font-bold leading-5" data-i18n="home.blog.categories.category2.description">tendencias, tecnología
                                     y compatibilidad
                                     con Nespresso.</p>
                             </div>
@@ -619,7 +686,7 @@
                         </div>
                     </div>
                     <div class="container-blog-info info-3 col-span-1 bg-white rounded-xl p-4 shadow-xl">
-                        <p class="font-helvetica font-extrabold text-2xl text-black">HOTELES Y OFICINAS:</p>
+                        <p class="font-helvetica font-extrabold text-2xl text-black" data-i18n="home.blog.categories.category3.title">HOTELES Y OFICINAS:</p>
                         <div class="container-blog-info-grid grid grid-cols-3 items-end relative">
                             <button onclick="window.location.href = 'blog/'"
                                 class="bg-green-primary rounded cursor-pointer hover-scale absolute right-0 shadow-lg"
@@ -627,21 +694,21 @@
                                 <img src="assets/img/blog/row.png" alt="Row Button" class="mx-auto blog-button">
                             </button>
                             <div class="blog-text col-span-2 mt-2 flex justify-start items-start">
-                                <p class="font-helvetica text-gray-primary font-bold leading-5">casos de éxito y
+                                <p class="font-helvetica text-gray-primary font-bold leading-5" data-i18n="home.blog.categories.category3.description">casos de éxito y
                                     experiencias B2B.</p>
                             </div>
                             <div class="col-span-1"></div>
                         </div>
                     </div>
                     <div class="container-blog-info info-4 col-span-1 bg-white rounded-xl p-4 shadow-xl">
-                        <p class="font-helvetica font-extrabold text-2xl text-black">MAQUILA Y PRODUCCIÓN:</p>
+                        <p class="font-helvetica font-extrabold text-2xl text-black" data-i18n="home.blog.categories.category4.title">MAQUILA Y PRODUCCIÓN:</p>
                         <div class="container-blog-info-grid final-grid grid grid-cols-3 items-end relative">
                             <button onclick="window.location.href = 'blog/'"
                                 class="bg-green-primary rounded cursor-pointer hover-scale absolute right-0 shadow-lg">
                                 <img src="assets/img/blog/row.png" alt="Row Button" class="mx-auto blog-button">
                             </button>
                             <div class="blog-text col-span-2 mt-2 flex justify-start items-start">
-                                <p class="font-helvetica text-gray-primary font-bold leading-5">oportunidades para
+                                <p class="font-helvetica text-gray-primary font-bold leading-5" data-i18n="home.blog.categories.category4.description">oportunidades para
                                     marcas de café.</p>
                             </div>
                             <div class="col-span-1"></div>
@@ -655,33 +722,33 @@
         <section id="contact" class="pt-20">
             <div class="container container-contact mx-auto animate-fadeInUp">
                 <div class="container-title-contact">
-                    <p class="font-helvetica font-extrabold text-5xl text-brown-primary text-center">¡ESCRÍBENOS!</p>
+                    <p class="font-helvetica font-extrabold text-5xl text-brown-primary text-center" data-i18n="home.contact.title">¡ESCRÍBENOS!</p>
                 </div>
                 <div class="container-form-contact mt-12 mx-auto">
                     <form action="">
                         <div class="container-form-contact-inputs">
                             <div class="grid grid-cols-4 grid-rows-5 gap-2">
-                                <div class="col-span-2">
+                                <div class="col-span-2" data-i18n="home.contact.form.fields.field1">
                                     <input type="text" placeholder="Nombre completo" required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium" />
                                 </div>
-                                <div class="col-span-2 col-start-3">
+                                <div class="col-span-2 col-start-3" data-i18n="home.contact.form.fields.field2">
                                     <input type="text" placeholder="Ciudad" required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium" />
                                 </div>
-                                <div class="col-span-4 row-start-2">
+                                <div class="col-span-4 row-start-2" data-i18n="home.contact.form.fields.field3">
                                     <input type="email" placeholder="Correo electrónico" required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium" />
                                 </div>
-                                <div class="col-span-2 row-start-3">
+                                <div class="col-span-2 row-start-3" data-i18n="home.contact.form.fields.field4">
                                     <input type="text" placeholder="Teléfono" required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium" />
                                 </div>
-                                <div class="col-span-2 col-start-3 row-start-3">
+                                <div class="col-span-2 col-start-3 row-start-3" data-i18n="home.contact.form.fields.field5">
                                     <input type="text" placeholder="Empresa" required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium" />
                                 </div>
-                                <div class="col-span-4 row-span-2 row-start-4">
+                                <div class="col-span-4 row-span-2 row-start-4" data-i18n="home.contact.form.fields.field6">
                                     <textarea name="message" id="message_form" cols="30" rows="4" placeholder="Mensaje"
                                         required
                                         class="w-full h-full border-3 border-gray-600 rounded-md py-4 px-6 text-lg font-helvetica font-bold placeholder:text-gray-400 placeholder:font-medium"></textarea>
@@ -691,7 +758,8 @@
                                 <input type="checkbox" id="terms" name="terms" class="check-terms rounded-sm mr-2"
                                     required>
                                 <label for="terms"
-                                    class="text-gray-400 font-helvetica text-lg leading-tight font-medium select-none cursor-pointer">
+                                    class="text-gray-400 font-helvetica text-lg leading-tight font-medium select-none cursor-pointer"
+                                    data-i18n="home.contact.terms">
                                     Acepto términos y condiciones. Conozco las
                                     <span class="font-extrabold">
                                         <a href="#" target="_blank">Políticas de Privacidad.</a>
@@ -701,7 +769,8 @@
                         </div>
                         <div class="container-form-button mt-5">
                             <button type="submit"
-                                class="bg-green-primary font-helvetica text-brown-primary font-extrabold py-2 px-9 cursor-pointer rounded-lg text-2xl hover-scale">
+                                class="bg-green-primary font-helvetica text-brown-primary font-extrabold py-2 px-9 cursor-pointer rounded-lg text-2xl hover-scale"
+                                data-i18n="home.contact.submit_button">
                                 Enviar
                             </button>
                         </div>
@@ -723,6 +792,8 @@
                         <div class="container-logo-footer">
                             <img src="assets/img/footer/logo.png" alt="Logo Footer"
                                 class="logo-footer hover-scale w-32 sm:w-40 md:w-48 lg:w-48 mx-auto">
+                            <img src="assets/img/footer/logo-certificacion.jpeg" alt="Logo Certificación"
+                                class="logo-certificacion-footer hover-scale w-24 mx-auto mt-4">
                         </div>
                     </div>
                     <div class="md:col-span-2 lg:col-span-2 space-y-4 lg:space-y-4 lg:gap-3 xl:gap-3">
@@ -759,7 +830,7 @@
                             </div>
                             <div class="lg:col-span-2 info-contact-footer">
                                 <p
-                                    class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5">
+                                    class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5" data-i18n="footer.office_location">
                                     Oficina principal: Bogotá, Colombia.</p>
                             </div>
                         </div>
@@ -779,7 +850,7 @@
                         </div>
                         <div>
                             <p
-                                class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center">
+                                class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center" data-i18n="footer.copyright">
                                 Reservados todos los derechos<br>
                                 COFFEE BIOCAPS 2025.
                             </p>
@@ -791,6 +862,7 @@
     </footer>
 
     <!-- ====================== CUSTOM JS ====================== -->
+    <script type="module" src="assets/js/i18n/i18n.js"></script>
     <script src="assets/js/base/nav.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/contacto.js"></script>

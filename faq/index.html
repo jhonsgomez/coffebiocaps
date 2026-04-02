@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO -->
-    <title>Preguntas Frecuentes | Cápsulas de Café Compostables | Coffee Bio Caps</title>
+    <title data-i18n="faq.head.title">Preguntas Frecuentes | Cápsulas de Café Compostables | Coffee Bio Caps</title>
     <meta name="description"
         content="Resolvemos tus dudas sobre cápsulas de café compostables, maquila y alquiler de máquinas Nespresso. Soluciones sostenibles para hoteles y oficinas.">
     <meta name="keywords"
@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="../assets/css/tailwind.css">
     <link rel="stylesheet" href="../assets/css/base/nav.css">
     <link rel="stylesheet" href="../assets/css/base/footer.css">
+    <link rel="stylesheet" href="../assets/css/base/i18n.css">
 
     <link rel="stylesheet" href="../assets/css/faq/hero.css">
 
@@ -97,16 +98,31 @@
                 <div class="flex items-center justify-between space-x-6">
                     <!-- Desktop Navigation -->
                     <div class="hidden lg:flex items-center space-x-8">
+                        <div class="lang-switcher" id="switcher">
+                            <div class="lang-slider" id="lang-slider"></div>
+                            <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                                <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                            </button>
+                            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                                <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                            </button>
+                        </div>
+
                         <a href="../nosotros/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.about">Nosotros</a>
                         <a href="../servicios/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.services">Servicios</a>
                         <a href="../blog/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.blog">Blog</a>
                         <a href="../faq/"
-                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica">FAQ</a>
+                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica"
+                            data-i18n="nav.faq">FAQ</a>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media Icons - Desktop -->
@@ -136,17 +152,32 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu lg:hidden py-4">
                 <div class="flex flex-col justify-center space-y-4 px-8">
+                    <div class="lang-switcher" id="switcher">
+                        <div class="lang-slider" id="lang-slider"></div>
+                        <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                            <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                            <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                        </button>
+                    </div>
+
                     <a href="../nosotros/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.about">Nosotros</a>
                     <a href="../servicios/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.services">Servicios</a>
                     <a href="../blog/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.blog">Blog</a>
                     <a href="../faq/"
-                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica">FAQ</a>
+                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica"
+                        data-i18n="nav.faq">FAQ</a>
                     <div>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media - Mobile -->
@@ -178,8 +209,8 @@
                     class="container-title-faq grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center pt-16 sm:pt-16 md:pt-16 lg:pt-24">
                     <div class="col-span-1 text-center">
                         <p class="font-helvetica font-light text-5xl text-brown-primary leading-tight uppercase">
-                            <span>Preguntas</span><br>
-                            <span class="font-extrabold">Frecuentes</span>
+                            <span data-i18n="faq.title1">Preguntas</span><br>
+                            <span data-i18n="faq.title2" class="font-extrabold">Frecuentes</span>
                         </p>
                         <div class="flex justify-center items-center gap-6 mt-6">
                             <img src="../assets/img/faq/title-1.png" class="w-14 hover-scale" alt="Icon 1">
@@ -189,7 +220,7 @@
                     </div>
                     <div
                         class="hover-scale shadow-md col-span-1 border-3 border-gray-primary p-8 rounded-2xl items-center mr-0 sm:mr-0 md:mr-0 lg:mr-14 mt-8 sm:mt-8 md:mt-9 lg:mt-0">
-                        <p class="font-helvetica font-bold text-gray-primary text-lg leading-5">
+                        <p class="font-helvetica font-bold text-gray-primary text-lg leading-5" data-i18n="faq.intro">
                             En Coffee Bio Caps queremos que tengas toda la información clara antes de dar el paso hacia
                             un servicio de café más sostenible.
                             <br>
@@ -206,13 +237,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
-                                ¿Qué son las
-                                cápsulas de café compostables?</p>
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question1.question">
+                                ¿Qué son las cápsulas de café compostables?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Son cápsulas
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question1.answer">
+                                Son cápsulas
                                 fabricadas con materiales que se desintegran de forma natural en ambientes domésticos o
                                 industriales, sin generar residuos plásticos. Con Coffee Bio Caps, tus clientes
                                 disfrutan de café premium con un impacto positivo en el planeta.</p>
@@ -224,13 +257,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
-                                ¿En qué se
-                                diferencian de las cápsulas biodegradables?</p>
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question2.question">
+                                ¿En qué se diferencian de las cápsulas biodegradables?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all max-h-0 overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Ambas reducen el
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question2.answer">
+                                Ambas reducen el
                                 impacto ambiental, pero las cápsulas compostables están diseñadas para convertirse en
                                 abono en un tiempo más corto, mientras que lo “biodegradable” puede tardar más en
                                 desintegrarse.</p>
@@ -242,14 +277,17 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question3.question">
                                 ¿Son
                                 compatibles
                                 con máquinas Nespresso?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all max-h-0 overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí. Nuestras
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question3.answer">
+                                Sí. Nuestras
                                 cápsulas compostables son compatibles con sistemas tipo Nespresso, garantizando
                                 comodidad y la misma calidad de sabor.</p>
                         </div>
@@ -260,13 +298,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question4.question">
                                 ¿Qué es la
                                 maquila de cápsulas de café?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all max-h-0 overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Es un servicio en el
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question4.answer">
+                                Es un servicio en el
                                 que producimos cápsulas de café compostables con tu propia marca. En Coffee Bio Caps
                                 personalizamos el diseño y aseguramos procesos de trazabilidad para que tu producto
                                 llegue al mercado con respaldo sostenible.</p>
@@ -278,13 +319,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question5.question">
                                 ¿Por qué elegir
                                 cápsulas de café sostenibles para hoteles y oficinas?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all max-h-0 overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Porque además de
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question5.answer">
+                                Porque además de
                                 ofrecer un café de calidad premium, transmites un mensaje de responsabilidad ambiental a
                                 tus clientes y colaboradores, diferenciando tu servicio con un valor agregado.</p>
                         </div>
@@ -295,13 +339,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question6.question">
                                 ¿Puedo alquilar
                                 máquinas de café junto con las cápsulas?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all max-h-0 overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí. Ofrecemos el
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question6.answer">
+                                Sí. Ofrecemos el
                                 servicio integral de alquiler de máquinas compatibles Nespresso, mantenimiento incluido,
                                 junto con el suministro de nuestras cápsulas compostables.</p>
                         </div>
@@ -312,13 +359,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question7.question">
                                 ¿El sabor del producto consumible se ve afectado por las cápsulas, en comparación con
                                 otros productos alternativos de Nespresso?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">El sabor de la
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question7.answer">
+                                El sabor de la
                                 bebida no se ve afectado de ninguna manera por las cápsulas. Laboratorios no afiliados
                                 lo han demostrado a través de pruebas organolépticas y de migración. Respetamos la
                                 normativa EU DIN 10955.</p>
@@ -330,12 +380,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question8.question">
                                 ¿Son las cápsulas Coffee Caps cápsulas barrera de oxígeno?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí, las cápsulas
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question8.answer">
+                                Sí, las cápsulas
                                 Coffee Caps son barrera de oxígeno. La tasa de transmisión de oxígeno es de 0.003 cm3/
                                 (empaquetado. día 0,21) a 23°C y 50% H.R. ext / 50% H.R. int.</p>
                         </div>
@@ -346,13 +399,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question9.question">
                                 ¿Cuál es la vida útil de las cápsulas compostables domésticas Coffee Caps y cómo difiere
                                 esto de las cápsulas de plástico y aluminio?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">La vida útil de las
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question9.answer">
+                                La vida útil de las
                                 cápsulas Coffee Caps es de 2 años a partir de la fecha de fabricación, que es similar a
                                 las cápsulas de aluminio y plástico. Ten en cuenta que esta no es la vida útil del
                                 producto final, que será diferente.</p>
@@ -364,13 +420,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question10.question">
                                 ¿En qué se diferencian las cápsulas compostables domésticas Coffee Caps de otras
                                 cápsulas compostables en el mercado?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Un aspecto
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question10.answer">
+                                Un aspecto
                                 importante de Coffee Caps es que está certificado como compostable en casa y 100%
                                 orgánico (derivado de materia viva). Puedes poner tu cápsula en tu compost doméstico y
                                 se degradará completamente en 6 meses.</p>
@@ -382,13 +441,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question11.question">
                                 ¿Por qué las cápsulas compostables domésticas Coffee Caps son mejores que las cápsulas
                                 de aluminio reciclables?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Transformar la
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question11.answer">
+                                Transformar la
                                 bauxita en aluminio requiere enormes cantidades de energía
                                 y luego, convertir el aluminio reciclable en cápsulas nuevamente conlleva un
                                 gran costo energético de carbono. El aluminio tiene problemas ambientales bien
@@ -403,13 +465,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question12.question">
                                 ¿Con qué máquinas de consumo son compatibles las cápsulas compostables domésticas Coffee
                                 Caps?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Nuestras Coffee Caps
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question12.answer">
+                                Nuestras Coffee Caps
                                 son compatibles con todas las máquinas Nespresso desde 2010.</p>
                         </div>
                     </div>
@@ -419,12 +484,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question13.question">
                                 ¿De qué están hechas las Coffee Caps?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Las Coffee Caps
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question13.answer">
+                                Las Coffee Caps
                                 están hechas de biopolímeros y materia orgánica.</p>
                         </div>
                     </div>
@@ -434,12 +502,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question14.question">
                                 ¿Qué porcentaje del material de la cápsula proviene de fuentes sostenibles?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Las Coffee Caps son
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question14.answer">
+                                Las Coffee Caps son
                                 100% biobasadas y provienen en su totalidad de fuentes sostenibles. Coffee Caps están
                                 hechas de biopolímeros y materia orgánica.</p>
                         </div>
@@ -450,13 +521,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question15.question">
                                 ¿Contienen las Coffee Caps algún plástico de origen fósil, BPA / derivados de BPA o PFC?
                             </p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Las Coffee Caps no
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question15.answer">
+                                Las Coffee Caps no
                                 contienen ningún tipo de plástico de origen petrolero ni BTA o PFC.</p>
                         </div>
                     </div>
@@ -466,12 +540,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question16.question">
                                 ¿Son las cápsulas Coffee Caps veganas?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí, las cápsulas son
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question16.answer">
+                                Sí, las cápsulas son
                                 veganas.</p>
                         </div>
                     </div>
@@ -481,12 +558,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question17.question">
                                 ¿Qué certificaciones tiene Coffee Caps?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Las Coffee Caps
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question17.answer">
+                                Las Coffee Caps
                                 tienen una clasificación de 4 estrellas OK Biobased de la entidad notificada TuV
                                 Austria. Esta es la calificación de calidad más alta posible</p>
                         </div>
@@ -497,12 +577,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question18.question">
                                 ¿Son biodegradables las Coffee Caps?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí, las cápsulas
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question18.answer">
+                                Sí, las cápsulas
                                 Coffee Caps son biodegradables mediante compostaje doméstico.</p>
                         </div>
                     </div>
@@ -512,12 +595,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question19.question">
                                 ¿Son las cápsulas Coffee Caps compostables en casa?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí.</p>
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question19.answer">
+                                Sí.</p>
                         </div>
                     </div>
                     <div class="col-span-1 rounded-xl bg-white p-8 relative">
@@ -526,12 +612,15 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question20.question">
                                 ¿Cuál es la diferencia entre compostable industrial y compostable en casa?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Las plantas de
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question20.answer">
+                                Las plantas de
                                 compostaje industriales manejan cantidades muy grandes, entre 2000 y 10,000 toneladas.
                                 Certificado como “compostable” a través de una planta industrial significa que se
                                 degradará en 3 meses debido a la alta temperatura y humedad biológica.
@@ -548,13 +637,16 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question21.question">
                                 ¿Cuál es la mejor manera de desechar las cápsulas compostables en casa de Coffee Caps?
                             </p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">La mejor solución es
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question21.answer">
+                                La mejor solución es
                                 tirar tu Coffee Caps en el compost casero o el compost comunitario.</p>
                         </div>
                     </div>
@@ -564,30 +656,36 @@
                             onclick="toggleAnswer(this)">+</button>
                         <div class="statement">
                             <p onclick="toggleAnswer(this)"
-                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer">
+                                class="max-w-[85%] font-helvetica font-extrabold italic text-2xl text-brown-primary select-none cursor-pointer"
+                                data-i18n="faq.questions.question22.question">
                                 ¿Las cápsulas compostables en casa de Coffee Caps pueden ir en el contenedor de residuos
                                 orgánicos?</p>
                         </div>
                         <div
                             class="answer mt-8 mx-3 px-6 pt-4 pb-5 border-gray-primary border-2 rounded-xl transition-all overflow-hidden opacity-0">
-                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5">Sí.</p>
+                            <p class="font-helvetica text-gray-primary font-bold text-md leading-5"
+                                data-i18n="faq.questions.question22.answer">
+                                Sí.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="final-message font-helvetica text-center pb-20 animate-fadeInUp">
-                <p class="font-extrabold italic text-2xl text-brown-primary leading-tight max-w-2xl mx-auto">
+                <p class="font-extrabold italic text-2xl text-brown-primary leading-tight max-w-2xl mx-auto"
+                    data-i18n="faq.final_message">
                     ¿Tienes más preguntas sobre nuestras cápsulas de café compostables o servicios?
                 </p>
                 <div
-                    class="hover-scale p-2 rounded-xl bg-brown-primary max-w-2xl mx-auto font-bold text-white mt-6 text-lg">
+                    class="hover-scale p-2 rounded-xl bg-brown-primary max-w-2xl mx-auto font-bold text-white mt-6 text-lg"
+                    data-i18n="faq.final_message_contact">
                     Contáctanos y un asesor especializado te ayudará a diseñar la solución perfecta para tu negocio.
                 </div>
             </div>
 
             <button onclick="window.location.href='../#contact'"
-                class="relative -mb-5 z-10 bg-green-primary font-bold text-white px-6 py-2 rounded-full hover-scale mx-auto block font-helvetica cursor-pointer">
+                class="relative -mb-5 z-10 bg-green-primary font-bold text-white px-6 py-2 rounded-full hover-scale mx-auto block font-helvetica cursor-pointer"
+                data-i18n="faq.final_message_button">
                 Saber más
             </button>
         </section>
@@ -605,6 +703,8 @@
                         <div class="container-logo-footer">
                             <img src="../assets/img/footer/logo.png" alt="Logo Footer"
                                 class="logo-footer hover-scale w-32 sm:w-40 md:w-48 lg:w-48 mx-auto">
+                            <img src="../assets/img/footer/logo-certificacion.jpeg" alt="Logo Certificación"
+                                class="logo-certificacion-footer hover-scale w-24 mx-auto mt-4">
                         </div>
                     </div>
                     <div class="md:col-span-2 lg:col-span-2 space-y-4 lg:space-y-4 lg:gap-3 xl:gap-3">
@@ -640,8 +740,8 @@
                                     class="w-5 sm:w-6 mr-4 hover-scale">
                             </div>
                             <div class="lg:col-span-2 info-contact-footer">
-                                <p
-                                    class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5">
+                                <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5"
+                                    data-i18n="footer.office_location">
                                     Oficina principal: Bogotá, Colombia.</p>
                             </div>
                         </div>
@@ -661,8 +761,8 @@
                             </a>
                         </div>
                         <div>
-                            <p
-                                class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center">
+                            <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center"
+                                data-i18n="footer.copyright">
                                 Reservados todos los derechos<br>
                                 COFFEE BIOCAPS 2025.
                             </p>
@@ -674,9 +774,9 @@
     </footer>
 
     <!-- ====================== CUSTOM JS ====================== -->
+    <script type="module" src="../assets/js/i18n/i18n.js"></script>
     <script src="../assets/js/base/nav.js"></script>
     <script src="../assets/js/script.js"></script>
-
     <script src="../assets/js/faq/faq.js"></script>
 
 </body>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO -->
-    <title>Quiénes Somos | Fabricantes de Cápsulas de Café Compostables | Coffee Bio Caps</title>
+    <title data-i18n="about_us.head.title">Quiénes Somos | Fabricantes de Cápsulas de Café Compostables | Coffee Bio Caps</title>
     <meta name="description"
         content="Somos pioneros en cápsulas de café compostables en Colombia. Fabricamos cápsulas biodegradables para hoteles, marcas y negocios sostenibles. Conoce nuestra misión y visión.">
     <meta name="keywords"
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="../assets/css/tailwind.css">
     <link rel="stylesheet" href="../assets/css/base/nav.css">
     <link rel="stylesheet" href="../assets/css/base/footer.css">
+    <link rel="stylesheet" href="../assets/css/base/i18n.css">
 
     <link rel="stylesheet" href="../assets/css/nosotros/hero.css">
     <link rel="stylesheet" href="../assets/css/nosotros/about.css">
@@ -102,16 +103,32 @@
                 <div class="flex items-center justify-between space-x-6">
                     <!-- Desktop Navigation -->
                     <div class="hidden lg:flex items-center space-x-8">
+
+                        <div class="lang-switcher" id="switcher">
+                            <div class="lang-slider" id="lang-slider"></div>
+                            <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                                <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                            </button>
+                            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                                <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                            </button>
+                        </div>
+
                         <a href="../nosotros/"
-                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary transition duration-300 font-helvetica">Nosotros</a>
+                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary transition duration-300 font-helvetica"
+                            data-i18n="nav.about">Nosotros</a>
                         <a href="../servicios/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.services">Servicios</a>
                         <a href="../blog/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.blog">Blog</a>
                         <a href="../faq/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.faq">FAQ</a>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media Icons - Desktop -->
@@ -141,17 +158,32 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu lg:hidden py-4">
                 <div class="flex flex-col justify-center space-y-4 px-8">
+                    <div class="lang-switcher" id="switcher">
+                        <div class="lang-slider" id="lang-slider"></div>
+                        <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                            <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                            <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                        </button>
+                    </div>
+
                     <a href="../nosotros/"
-                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica">Nosotros</a>
+                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 w-fit rounded-full border border-green-primary transition duration-300 font-helvetica"
+                        data-i18n="nav.about">Nosotros</a>
                     <a href="../servicios/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Servicios</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.services">Servicios</a>
                     <a href="../blog/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.blog">Blog</a>
                     <a href="../faq/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.faq">FAQ</a>
                     <div>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media - Mobile -->
@@ -181,9 +213,12 @@
             <div class="absolute inset-0 bg-gradient-to-bl from-black to-transparent"></div>
             <div class="container-title animate-fadeInUp z-10">
                 <p class="title-hero leading-tight mb-6 font-helvetica">
-                    <span class="font-extrabold text-green-primary text-4xl">SOMOS:</span><br>
-                    <span class="text-white font-normal uppercase">pioneros en cápsulas de café</span><br>
-                    <span class="text-white font-extrabold uppercase">compostables en Colombia</span>
+                    <span class="font-extrabold text-green-primary text-4xl"
+                        data-i18n="about_us.title">SOMOS:</span><br>
+                    <span class="text-white font-normal uppercase" data-i18n="about_us.subtitle1">pioneros en cápsulas
+                        de café</span><br>
+                    <span class="text-white font-extrabold uppercase" data-i18n="about_us.subtitle2">compostables en
+                        Colombia</span>
                 </p>
             </div>
         </section>
@@ -195,7 +230,8 @@
             <div class="container-about container mx-auto px-4 sm:px-6 lg:px-8 animate-fadeInUp">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
                     <div class="card-about border-3 rounded-3xl px-4 py-6 lg:px-11 shadow-lg hover-scale">
-                        <p class="text-gray-primary text-base sm:text-lg leading-5 font-helvetica font-bold">
+                        <p class="text-gray-primary text-base sm:text-lg leading-5 font-helvetica font-bold"
+                            data-i18n="about_us.about.description">
                             En Coffee Bio Caps lideramos la revolución sostenible del café monodosis. Nuestras cápsulas
                             de café <span class="font-semibold">compostables y biodegradables</span>, compatibles con
                             sistemas Nespresso, son la elección perfecta para hoteles, oficinas y marcas de café que
@@ -204,8 +240,10 @@
                     </div>
                     <div class="text-center lg:text-left lg:ml-12">
                         <h2 class="text-2xl font-bold leading-8 lg:text-3xl md:text-3xl">
-                            <span class="font-helvetica italic text-brown-primary">El placer de tomar<br>decisiones
-                                conscientes<br>comienza con cada taza.</span>
+                            <span class="font-helvetica italic text-brown-primary" data-i18n="about_us.about.phrase">
+                                El placer de tomar<br>decisiones
+                                conscientes<br>comienza con cada taza.
+                            </span>
                         </h2>
                     </div>
                 </div>
@@ -223,9 +261,11 @@
                                     class="w-50 mx-auto -mt-32 image-vision hover-scale">
                             </div>
                             <div class="container-text-vision text-center">
-                                <h3 class="text-2xl font-bold text-white uppercase font-helvetica">Nuestra Misión</h3>
-                                <p class="text-white font-helvetica mt-4">Cada día brindamos a <span
-                                        class="font-semibold">marcas de café y establecimientos</span> soluciones
+                                <h3 class="text-2xl font-bold text-white uppercase font-helvetica"
+                                    data-i18n="about_us.mision.title">Nuestra Misión</h3>
+                                <p class="text-white font-helvetica mt-4" data-i18n="about_us.mision.description">Cada
+                                    día brindamos a <span class="font-semibold">marcas de café y establecimientos</span>
+                                    soluciones
                                     compostables de
                                     alta calidad, acompañándolos con tecnología limpia, asesoría personalizada y un
                                     respaldo confiable que asegura experiencias excepcionales para sus clientes.</p>
@@ -239,8 +279,10 @@
                                     class="w-50 mx-auto -mt-32 image-vision hover-scale">
                             </div>
                             <div class="container-text-vision text-center">
-                                <h3 class="text-2xl font-bold text-white uppercase font-helvetica">Nuestra Visión</h3>
-                                <p class="text-white font-helvetica mt-4">Ser la marca líder que redefine el consumo de
+                                <h3 class="text-2xl font-bold text-white uppercase font-helvetica"
+                                    data-i18n="about_us.vision.title">Nuestra Visión</h3>
+                                <p class="text-white font-helvetica mt-4" data-i18n="about_us.vision.description">Ser la
+                                    marca líder que redefine el consumo de
                                     café en cápsulas compostables en el
                                     mundo, llevando <span class="font-semibold">innovación sostenible</span> y el sabor
                                     del <span class="font-semibold">café colombiano de origen</span> a
@@ -255,8 +297,8 @@
         <!-- ====================== OUR VALUES ====================== -->
         <section id="our-values" class="pt-12 pb-24">
             <div class="container container-values mx-auto animate-fadeInUp">
-                <p
-                    class="font-helvetica text-3xl sm:text-3xl md:text-4xl lg:text-5xl uppercase mb-14 text-gray-primary text-center">
+                <p class="font-helvetica text-3xl sm:text-3xl md:text-4xl lg:text-5xl uppercase mb-14 text-gray-primary text-center"
+                    data-i18n="about_us.our_values.title">
                     <span class="font-extrabold">Nuestros </span>Valores
                 </p>
                 <div
@@ -266,10 +308,12 @@
                             <img src="../assets/img/nosotros/values/value-1.png" alt="Valor 1" class="w-20 mx-auto">
                         </div>
                         <div class="container-text-values text-center mt-4">
-                            <p class="font-helvetica font-extrabold text-black text-xl">
+                            <p class="font-helvetica font-extrabold text-black text-xl"
+                                data-i18n="about_us.our_values.values.value1.title">
                                 Sostenibilidad:
                             </p>
-                            <p class="font-helvetica font-extrabold text-black leading-5">
+                            <p class="font-helvetica font-extrabold text-black leading-5"
+                                data-i18n="about_us.our_values.values.value1.description">
                                 cuidamos el planeta en cada proceso.
                             </p>
                         </div>
@@ -279,10 +323,12 @@
                             <img src="../assets/img/nosotros/values/value-2.png" alt="Valor 2" class="w-20 mx-auto">
                         </div>
                         <div class="container-text-values text-center mt-4">
-                            <p class="font-helvetica font-extrabold text-black text-xl">
+                            <p class="font-helvetica font-extrabold text-black text-xl"
+                                data-i18n="about_us.our_values.values.value2.title">
                                 Flexibilidad:
                             </p>
-                            <p class="font-helvetica font-extrabold text-black leading-5">
+                            <p class="font-helvetica font-extrabold text-black leading-5"
+                                data-i18n="about_us.our_values.values.value2.description">
                                 adaptamos nuestras soluciones a cada cliente y mercado.
                             </p>
                         </div>
@@ -292,10 +338,12 @@
                             <img src="../assets/img/nosotros/values/value-3.png" alt="Valor 3" class="w-20 mx-auto">
                         </div>
                         <div class="container-text-values text-center mt-4">
-                            <p class="font-helvetica font-extrabold text-black text-xl">
+                            <p class="font-helvetica font-extrabold text-black text-xl"
+                                data-i18n="about_us.our_values.values.value3.title">
                                 Compromiso
                             </p>
-                            <p class="font-helvetica font-extrabold text-black leading-5">
+                            <p class="font-helvetica font-extrabold text-black leading-5"
+                                data-i18n="about_us.our_values.values.value3.description">
                                 y protección: tratamos tu café como si fuera nuestro.
                             </p>
                         </div>
@@ -305,10 +353,12 @@
                             <img src="../assets/img/nosotros/values/value-4.png" alt="Valor 4" class="w-20 mx-auto">
                         </div>
                         <div class="container-text-values text-center mt-4">
-                            <p class="font-helvetica font-extrabold text-black text-xl">
+                            <p class="font-helvetica font-extrabold text-black text-xl"
+                                data-i18n="about_us.our_values.values.value4.title">
                                 Trazabilidad:
                             </p>
-                            <p class="font-helvetica font-extrabold text-black leading-5">
+                            <p class="font-helvetica font-extrabold text-black leading-5"
+                                data-i18n="about_us.our_values.values.value4.description">
                                 garantizamos procesos transparentes desde el origen hasta la taza.
                             </p>
                         </div>
@@ -333,14 +383,14 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 lg:mb-12 items-center animate-fadeInUp">
                     <div class="lg:col-span-1">
-                        <h2
-                            class="text-3xl sm:text-3xl lg:text-5xl text-white leading-tight font-helvetica font-light title-1">
+                        <h2 class="text-3xl sm:text-3xl lg:text-5xl text-white leading-tight font-helvetica font-light title-1"
+                            data-i18n="about_us.value_proposition.title1">
                             NUESTRA<br>
                             PROPUESTA<br>
                             <span class="font-extrabold">DE VALOR</span>
                         </h2>
-                        <h2
-                            class="text-3xl sm:text-5xl lg:text-5xl text-white leading-tight text-center font-helvetica font-light title-2 hidden">
+                        <h2 class="text-3xl sm:text-5xl lg:text-5xl text-white leading-tight text-center font-helvetica font-light title-2 hidden"
+                            data-i18n="about_us.value_proposition.title2">
                             NUESTRA PROPUESTA <span class="font-extrabold">DE VALOR</span>
                         </h2>
                     </div>
@@ -349,10 +399,12 @@
                         <div class="col-span-2 py-8 pl-50 pr-8 text-box-content">
 
                             <p class="text-white text-base sm:text-lg leading-5 font-helvetica font-bold">
-                                <span class="font-bold">No solo fabricamos cápsulas, construimos alianzas
+                                <span class="font-bold" data-i18n="about_us.value_proposition.description1">No solo
+                                    fabricamos cápsulas, construimos alianzas
                                     sostenibles.</span>
                             </p>
-                            <p class="text-white text-base sm:text-lg leading-5 mt-4 font-helvetica font-bold">
+                            <p class="text-white text-base sm:text-lg leading-5 mt-4 font-helvetica font-bold"
+                                data-i18n="about_us.value_proposition.description2">
                                 Ofrecemos un servicio integral que incluye maquila de cápsulas de café, alquiler de
                                 máquinas compatibles Nespresso y acompañamiento técnico y comercial, para que cada
                                 cliente disfrute de un café con calidad, practicidad y conciencia ambiental.
@@ -369,7 +421,7 @@
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
                             <span
-                                class="text-brown-primary font-bold text-base text-md font-helvetica">Ecológicas</span>
+                                class="text-brown-primary font-bold text-base text-md font-helvetica" data-i18n="about_us.value_proposition.features.feature1">Ecológicas</span>
                         </div>
                     </div>
 
@@ -380,7 +432,7 @@
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
                             <span
-                                class="text-brown-primary font-bold text-base text-md font-helvetica">Compostable</span>
+                                class="text-brown-primary font-bold text-base text-md font-helvetica" data-i18n="about_us.value_proposition.features.feature2">Compostable</span>
                         </div>
                     </div>
 
@@ -390,7 +442,7 @@
                             <img src="../assets/img/values/semilla.png" alt="Sabor premium" class="img-features">
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
-                            <span class="text-brown-primary font-bold text-base text-md font-helvetica">Sabor
+                            <span class="text-brown-primary font-bold text-base text-md font-helvetica" data-i18n="about_us.value_proposition.features.feature3">Sabor
                                 premium</span>
                         </div>
                     </div>
@@ -401,28 +453,32 @@
                             <img src="../assets/img/values/taza.png" alt="Fácil de preparación" class="img-features">
                         </div>
                         <div class="bg-white rounded-full px-6 py-3 shadow-lg label-feature">
-                            <span class="text-brown-primary font-bold text-base text-md font-helvetica">Fácil de
+                            <span class="text-brown-primary font-bold text-base text-md font-helvetica" data-i18n="about_us.value_proposition.features.feature4">Fácil de
                                 preparación</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center max-w-4xl mx-auto animate-fadeInUp">
-                    <h3 class="text-white text-2xl sm:text-3xl lg:text-3xl font-normal mb-3 leading-5 font-helvetica">
+                    <h3 class="text-white text-2xl sm:text-3xl lg:text-3xl font-normal mb-3 leading-5 font-helvetica"
+                    data-i18n="about_us.value_proposition.question1">
                         ¿QUIERES CÁPSULAS DE CAFÉ
                     </h3>
                     <h3
-                        class="text-white text-3xl sm:text-3xl lg:text-3xl font-extrabold mb-6 leading-9 font-helvetica">
+                        class="text-white text-3xl sm:text-3xl lg:text-3xl font-extrabold mb-6 leading-9 font-helvetica"
+                        data-i18n="about_us.value_proposition.question2">
                         COMPOSTABLES EN TU NEGOCIO?
                     </h3>
 
                     <p
-                        class="text-white text-xl sm:text-2xl lg:text-2xl mb-3 leading-5 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-9 font-helvetica">
+                        class="text-white text-xl sm:text-2xl lg:text-2xl mb-3 leading-5 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-9 font-helvetica"
+                        data-i18n="about_us.value_proposition.cta_text">
                         Hablemos y creemos juntos un impacto positivo.
                     </p>
 
                     <button onclick="window.location.href='../#contact'"
-                        class="bg-green-primary text-white px-6 py-3 rounded-full font-bold text-lg sm:text-xl btn-hover shadow-2xl mt-6 font-helvetica cursor-pointer hover-scale">
+                        class="bg-green-primary text-white px-6 py-3 rounded-full font-bold text-lg sm:text-xl btn-hover shadow-2xl mt-6 font-helvetica cursor-pointer hover-scale"
+                        data-i18n="about_us.value_proposition.cta_button">
                         Saber más
                     </button>
                 </div>
@@ -433,8 +489,8 @@
         <section id="message" class="pt-16 pb-16">
             <div class="container mx-auto animate-fadeInUp">
                 <div>
-                    <p
-                        class="title-message text-2xl sm:text-3xl lg:text-4xl text-center font-helvetica font-extrabold text-brown-secondary">
+                    <p class="title-message text-2xl sm:text-3xl lg:text-4xl text-center font-helvetica font-extrabold text-brown-secondary"
+                        data-i18n="message.title">
                         PIONEROS EN
                         CÁPSULAS DE CAFÉ<br class="salto-linea"> COMPOSTABLES EN COLOMBIA</p>
                 </div>
@@ -445,8 +501,8 @@
                     <img src="../assets/img/message/comilla2.png" alt="Decoración esquina"
                         class="comilla-2 absolute transform w-10 sm:w-14 lg:w-18 h-auto z-10" />
 
-                    <p
-                        class="text-message text-2xl sm:text-3xl lg:text-3xl text-center font-helvetica text-gray-500 italic">
+                    <p class="text-message text-2xl sm:text-3xl lg:text-3xl text-center font-helvetica text-gray-500 italic"
+                        data-i18n="message.description">
                         El placer de tomar
                         decisiones<br> conscientes guía cada paso<br> de lo que hacemos.</p>
                 </div>
@@ -466,6 +522,8 @@
                         <div class="container-logo-footer">
                             <img src="../assets/img/footer/logo.png" alt="Logo Footer"
                                 class="logo-footer hover-scale w-32 sm:w-40 md:w-48 lg:w-48 mx-auto">
+                            <img src="../assets/img/footer/logo-certificacion.jpeg" alt="Logo Certificación"
+                                class="logo-certificacion-footer hover-scale w-24 mx-auto mt-4">
                         </div>
                     </div>
                     <div class="md:col-span-2 lg:col-span-2 space-y-4 lg:space-y-4 lg:gap-3 xl:gap-3">
@@ -501,8 +559,8 @@
                                     class="w-5 sm:w-6 mr-4 hover-scale">
                             </div>
                             <div class="lg:col-span-2 info-contact-footer">
-                                <p
-                                    class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5">
+                                <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5"
+                                    data-i18n="footer.office_location">
                                     Oficina principal: Bogotá, Colombia.</p>
                             </div>
                         </div>
@@ -522,8 +580,8 @@
                             </a>
                         </div>
                         <div>
-                            <p
-                                class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center">
+                            <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center"
+                                data-i18n="footer.copyright">
                                 Reservados todos los derechos<br>
                                 COFFEE BIOCAPS 2025.
                             </p>
@@ -535,6 +593,7 @@
     </footer>
 
     <!-- ====================== CUSTOM JS ====================== -->
+    <script type="module" src="../assets/js/i18n/i18n.js"></script>
     <script src="../assets/js/base/nav.js"></script>
     <script src="../assets/js/script.js"></script>
 

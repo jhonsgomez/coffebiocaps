@@ -4,7 +4,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 const nav = document.querySelector('nav');
 
 const CLOSED_HEIGHT = 80;
-const OPEN_HEIGHT = 370;
+const OPEN_HEIGHT = 420;
 
 let menuOpen = false;
 

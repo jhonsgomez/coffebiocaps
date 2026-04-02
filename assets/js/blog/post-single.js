@@ -7,6 +7,16 @@ const WP_API_CONFIG = {
 };
 
 /**
+ * Funcion para traducir textos dinámicos en esta página (paginación, estados, etc.)
+ */
+
+function translateContent() {
+    if (typeof applyTranslations === 'function' && window.currentTranslations) {
+        applyTranslations(window.currentTranslations);
+    }
+}
+
+/**
  * Inicializar carga del post
  */
 async function initSinglePost() {
@@ -21,6 +31,7 @@ async function initSinglePost() {
         }
 
         await loadPost(postSlug);
+        translateContent();
 
     } catch (error) {
         showError('Error al cargar el post');
@@ -47,10 +58,12 @@ function showLoadingState() {
         <div class="flex justify-center items-center py-20">
             <div class="text-center">
                 <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-green-primary mx-auto mb-4"></div>
-                <p class="font-helvetica text-gray-primary font-bold">Cargando post...</p>
+                <p class="font-helvetica text-gray-primary font-bold" data-i18n="blog.post.loading">Cargando post...</p>
             </div>
         </div>
     `;
+
+    translateContent();
 }
 
 /**
@@ -65,12 +78,15 @@ function showError(message) {
             <div class="text-center">
                 <p class="font-helvetica text-red-500 font-bold text-xl mb-4"><i class="fas fa-exclamation-triangle"></i> ${message}</p>
                 <button onclick="window.location.href='index.html'" 
-                    class="bg-green-primary text-white px-8 py-3 rounded-full hover-scale font-helvetica font-bold cursor-pointer">
+                    class="bg-green-primary text-white px-8 py-3 rounded-full hover-scale font-helvetica font-bold cursor-pointer"
+                    data-i18n="blog.post.error.back">
                     <i class="fas fa-arrow-left"></i> Volver al blog
                 </button>
             </div>
         </div>
     `;
+
+    translateContent();
 }
 
 /**
@@ -97,11 +113,41 @@ async function loadPost(postSlug) {
 
         renderPost(post);
         updateMetaTags(post);
+        handleLangSwitch(post);
+        translateContent();
 
     } catch (error) {
         console.error('Error cargando post:', error);
         throw error;
     }
+}
+
+/**
+ * Manejar cambio de idioma para el post actual
+ */
+function handleLangSwitch(post) {
+    document.addEventListener('langchange', (e) => {
+        const newLang = e.detail.lang;
+        const currentLang = post.lang;
+
+        if (newLang === currentLang) return;
+
+        const translation = post.translations?.[newLang];
+
+        if (translation?.slug) {
+            window.location.href = `post.html?slug=${translation.slug}`;
+        } else {
+            const container = document.getElementById('post-content');
+            const noTranslationMsg = newLang === 'en'
+                ? 'This article is not available in English yet.'
+                : 'Este artículo aún no está disponible en español.';
+
+            const banner = document.createElement('div');
+            banner.className = 'bg-yellow-100 border border-yellow-400 text-yellow-800 px-6 py-3 rounded-lg mb-6 font-helvetica font-bold';
+            banner.textContent = noTranslationMsg;
+            container.prepend(banner);
+        }
+    }, { once: true });
 }
 
 /**
@@ -135,9 +181,9 @@ function renderPost(post) {
         <!-- Breadcrumb -->
         <nav class="mb-6 animate-fadeInUp" style="height: auto;">
             <ol class="flex items-center space-x-2 text-sm font-helvetica">
-                <li><a href="../" class="text-green-primary hover:underline">Inicio</a></li>
+                <li><a href="../" class="text-green-primary hover:underline" data-i18n="blog.post.breadcrumb.home">Inicio</a></li>
                 <li class="text-gray-primary">/</li>
-                <li><a href="index.html" class="text-green-primary hover:underline">Blog</a></li>
+                <li><a href="index.html" class="text-green-primary hover:underline" data-i18n="blog.post.breadcrumb.blog">Blog</a></li>
                 <li class="text-gray-primary">/</li>
                 <li class="text-gray-primary">${post.title.rendered}</li>
             </ol>
@@ -156,7 +202,7 @@ function renderPost(post) {
             <div class="flex items-center space-x-4 text-gray-primary font-helvetica mb-6">
                 <span><i class="fas fa-calendar-alt"></i> ${formattedDate}</span>
                 <span>•</span>
-                <span><i class="fas fa-user"></i> Por ${author}</span>
+                <span><i class="fas fa-user"></i> <span data-i18n="blog.post.author">Por</span> ${author}</span>
             </div>
             
             ${featuredImage ? `
@@ -175,13 +221,13 @@ function renderPost(post) {
         <div class="mb-14 text-center animate-fadeInUp">
             <button onclick="window.location.href='index.html'" 
                 class="bg-green-primary text-white px-8 py-3 rounded-full hover-scale font-helvetica font-bold cursor-pointer">
-                <i class="fas fa-arrow-left"></i> Volver al blog
+                <i class="fas fa-arrow-left"></i> <span data-i18n="blog.post.back">Volver al blog</span>
             </button>
         </div>
         
         <!-- Share Section -->
         <div class="mt-8 pt-8 border-t border-gray-200 animate-fadeInUp">
-            <p class="font-helvetica font-bold text-gray-primary mb-4">Compartir este artículo:</p>
+            <p class="font-helvetica font-bold text-gray-primary mb-4" data-i18n="blog.post.share">Compartir este artículo:</p>
             <div class="flex items-center space-x-4">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}" 
                    target="_blank"
@@ -200,7 +246,7 @@ function renderPost(post) {
                 </a>
                 <button onclick="copyToClipboard()" 
                    class="bg-green-primary text-white px-4 py-2 rounded-full hover-scale font-helvetica text-sm cursor-pointer">
-                    <i class="fas fa-link"></i> Copiar enlace
+                    <i class="fas fa-link"></i> <span data-i18n="blog.post.copy_link">Copiar enlace</span>
                 </button>
             </div>
         </div>
@@ -208,6 +254,8 @@ function renderPost(post) {
 
     // Aplicar estilos al contenido del post
     stylePostContent();
+
+    translateContent();
 }
 
 /**
@@ -270,6 +318,8 @@ function updateMetaTags(post) {
     if (ogImage && featuredImage) {
         ogImage.setAttribute('content', featuredImage);
     }
+
+    translateContent();
 }
 
 /**
@@ -285,8 +335,14 @@ function stripHtml(html) {
  * Copiar enlace al portapapeles
  */
 function copyToClipboard() {
+    const lang = document.documentElement.lang || 'es';
+
     navigator.clipboard.writeText(window.location.href).then(() => {
-        alert('¡Enlace copiado al portapapeles!');
+        if (lang === 'es') {
+            alert('¡Enlace copiado al portapapeles!');
+        } else {
+            alert('Link copied to clipboard!');
+        }
     }).catch(err => {
         console.error('Error al copiar:', err);
     });

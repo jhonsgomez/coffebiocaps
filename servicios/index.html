@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO -->
-    <title>Servicios de Café Sostenible | Cápsulas Compostables y Maquila | Coffee Bio Caps</title>
+    <title data-i18n="services.head.title">Servicios de Café Sostenible | Cápsulas Compostables y Maquila | Coffee Bio Caps</title>
     <meta name="description"
         content="Soluciones sostenibles: cápsulas de café compostables, maquila personalizada y alquiler de máquinas compatibles Nespresso para hoteles y oficinas.">
     <meta name="keywords"
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="../assets/css/tailwind.css">
     <link rel="stylesheet" href="../assets/css/base/nav.css">
     <link rel="stylesheet" href="../assets/css/base/footer.css">
+    <link rel="stylesheet" href="../assets/css/base/i18n.css">
 
     <link rel="stylesheet" href="../assets/css/servicios/hero.css">
     <link rel="stylesheet" href="../assets/css/servicios/services.css">
@@ -99,16 +100,32 @@
                 <div class="flex items-center justify-between space-x-6">
                     <!-- Desktop Navigation -->
                     <div class="hidden lg:flex items-center space-x-8">
+
+                        <div class="lang-switcher" id="switcher">
+                            <div class="lang-slider" id="lang-slider"></div>
+                            <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                                <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                            </button>
+                            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                                <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                            </button>
+                        </div>
+
                         <a href="../nosotros/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.about">Nosotros</a>
                         <a href="../servicios/"
-                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary transition duration-300 font-helvetica">Servicios</a>
+                            class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary transition duration-300 font-helvetica"
+                            data-i18n="nav.services">Servicios</a>
                         <a href="../blog/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.blog">Blog</a>
                         <a href="../faq/"
-                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                            class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                            data-i18n="nav.faq">FAQ</a>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-0 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media Icons - Desktop -->
@@ -138,17 +155,33 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu lg:hidden py-4">
                 <div class="flex flex-col justify-center space-y-4 px-8">
+
+                    <div class="lang-switcher" id="switcher">
+                        <div class="lang-slider" id="lang-slider"></div>
+                        <button class="lang-btn" data-lang="es" onclick="setLanguage('es')">
+                            <img src="../assets/img/i18n/colombia.png" alt=""> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+                            <img src="../assets/img/i18n/united-kingdom.png" alt=""> EN
+                        </button>
+                    </div>
+
                     <a href="../nosotros/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Nosotros</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.about">Nosotros</a>
                     <a href="../servicios/"
-                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary w-fit transition duration-300 font-helvetica">Servicios</a>
+                        class="text-black-primary hover:text-green-primary font-medium px-2 py-0 rounded-full border border-green-primary w-fit transition duration-300 font-helvetica"
+                        data-i18n="nav.services">Servicios</a>
                     <a href="../blog/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">Blog</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.blog">Blog</a>
                     <a href="../faq/"
-                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica">FAQ</a>
+                        class="text-black-primary hover:text-green-primary font-medium transition duration-300 font-helvetica"
+                        data-i18n="nav.faq">FAQ</a>
                     <div>
                         <a href="../#contact"
-                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica">Contacto</a>
+                            class="bg-green-primary text-white px-2 py-1.5 rounded-full hover-scale font-helvetica"
+                            data-i18n="nav.contact">Contacto</a>
                     </div>
 
                     <!-- Social Media - Mobile -->
@@ -184,8 +217,8 @@
                     </div>
                     <div
                         class="col-span-1 -ml-0 sm:-ml-4 md:-ml-4 lg:-ml-4 container-title-hero text-center sm:text-left md:text-left lg:text-left mx-3 sm:mx-0 md:mx-0 lg:mx-0">
-                        <p
-                            class="font-helvetica text-brown-primary text-3xl sm:text-3xl md:text-3xl lg:text-5xl uppercase">
+                        <p class="font-helvetica text-brown-primary text-3xl sm:text-3xl md:text-3xl lg:text-5xl uppercase"
+                            data-i18n="services.hero.title">
                             Soluciones sostenibles en cápsulas
                             <span class="font-extrabold">de café compostables para tu negocio</span>
                         </p>
@@ -200,7 +233,8 @@
                 style="background-color: #CCCCCC;">
                 <div class="container-browns grid grid-cols-2 gap-10 animate-fadeInUp">
                     <div class="col-span-1">
-                        <p class="font-helvetica font-bold text-gray-primary text-center text-lg leading-5">
+                        <p class="font-helvetica font-bold text-gray-primary text-center text-lg leading-5"
+                            data-i18n="services.service1.phrase">
                             En Coffee Bio Caps ofrecemos un portafolio integral diseñado para que hoteles, oficinas y
                             marcas de café disfruten de la mejor experiencia en café con conciencia ambiental.
                         </p>
@@ -210,18 +244,24 @@
                                     class="image-service w-full rounded-lg hover-scale">
                             </div>
                             <div class="contain-text p-8">
-                                <p class="font-helvetica text-2xl text-white font-bold">MAQUILA DE CÁPSULAS</p>
+                                <p class="font-helvetica text-2xl text-white font-bold"
+                                    data-i18n="services.service1.title">
+                                    MAQUILA DE CÁPSULAS
+                                </p>
                                 <div class="paragraph-1 mt-4">
-                                    <p class="font-helvetica text-white text-lg leading-5 text-justify">
+                                    <p class="font-helvetica text-white text-lg leading-5 text-justify"
+                                        data-i18n="services.service1.description1">
                                         En Coffee Bio Caps desarrollamos cápsulas de café compostables y biodegradables
                                         que combinan practicidad, sostenibilidad y el inconfundible sabor del café
                                         colombiano de origen.
                                     </p>
-                                    <p class="mt-4 font-helvetica text-white text-lg leading-5 text-justify">
+                                    <p class="mt-4 font-helvetica text-white text-lg leading-5 text-justify"
+                                        data-i18n="services.service1.description2">
                                         Nuestras cápsulas están pensadas para hoteles, oficinas y marcas de café que
                                         buscan ofrecer una experiencia responsable sin comprometer la calidad.
                                     </p>
-                                    <p class="font-helvetica text-white text-2xl text-left font-bold mb-6 mt-10">
+                                    <p class="font-helvetica text-white text-2xl text-left font-bold mb-6 mt-10"
+                                        data-i18n="services.service1.benefits.title">
                                         BENEFICIOS
                                     </p>
                                     <div class="container-benefits">
@@ -230,7 +270,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/left/icon-1.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service1.benefits.point1">
                                                     100% compostables y biodegradables: se desintegran naturalmente
                                                     sin requerir procesos industriales.
                                                 </p>
@@ -239,7 +280,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/left/icon-2.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service1.benefits.point2">
                                                     Compatibles con Nespresso: cápsulas diseñadas para sistemas tipo
                                                     Nespresso, garantizando practicidad y compatibilidad.
                                                 </p>
@@ -248,7 +290,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/left/icon-3.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service1.benefits.point3">
                                                     Café colombiano de origen: cuidamos la trazabilidad y calidad en
                                                     cada paso del proceso.
                                                 </p>
@@ -257,24 +300,28 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/left/icon-4.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service1.benefits.point4">
                                                     Ideales para negocios conscientes: hoteles, restaurantes, oficinas
                                                     y coworkings que desean diferenciarse con un café sostenible.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="font-helvetica text-white text-2xl text-left font-bold mt-10 mb-4">
+                                    <p class="font-helvetica text-white text-2xl text-left font-bold mt-10 mb-4"
+                                        data-i18n="services.service1.value_proposition.title">
                                         PROPUESTA DE
                                         VALOR</p>
                                     <div class="mt-4">
                                         <ul class="list-disc list-inside space-y-2">
-                                            <li class="font-helvetica text-white text-lg leading-5">
+                                            <li class="font-helvetica text-white text-lg leading-5"
+                                                data-i18n="services.service1.value_proposition.point1">
                                                 Con Coffee Bio Caps, tu empresa no solo alquila una máquina de café:
                                                 obtiene una solución completa y sostenible que combina practicidad,
                                                 calidad y compromiso ambiental.
                                             </li>
-                                            <li class="font-helvetica text-white text-lg leading-5">
+                                            <li class="font-helvetica text-white text-lg leading-5"
+                                                data-i18n="services.service1.value_proposition.point2">
                                                 Cada taza de café servida se convierte en una experiencia consciente que
                                                 refuerza la reputación de tu negocio.
                                             </li>
@@ -285,7 +332,8 @@
                         </div>
                     </div>
                     <div class="col-span-1">
-                        <p class="font-helvetica font-bold text-gray-primary text-center text-lg leading-5">
+                        <p class="font-helvetica font-bold text-gray-primary text-center text-lg leading-5"
+                            data-i18n="services.service2.phrase">
                             Nuestros servicios incluyen la maquila de cápsulas de café compostables, el alquiler de
                             máquinas de café compatibles Nespresso y la entrega de cápsulas biodegradables de café que
                             cuidan el planeta sin renunciar al sabor.
@@ -296,19 +344,24 @@
                                     class="image-service w-full rounded-lg hover-scale">
                             </div>
                             <div class="contain-text p-8">
-                                <p class="font-helvetica text-2xl text-white font-bold">ALQUILER DE MÁQUINAS</p>
+                                <p class="font-helvetica text-2xl text-white font-bold"
+                                    data-i18n="services.service2.title">ALQUILER DE MÁQUINAS</p>
                                 <div class="paragraph-1 mt-4">
-                                    <p class="font-helvetica text-white text-lg leading-5 text-justify">
+                                    <p class="font-helvetica text-white text-lg leading-5 text-justify"
+                                        data-i18n="services.service2.description1">
                                         En Coffee Bio Caps ofrecemos el servicio de alquiler de máquinas de café tipo
                                         Nespresso diseñado para hoteles, oficinas, coworkings y negocios que desean
                                         ofrecer una experiencia premium con cápsulas compostables y biodegradables.
                                     </p>
-                                    <p class="mt-4 font-helvetica text-white text-lg leading-5 text-justify">
+                                    <p class="mt-4 font-helvetica text-white text-lg leading-5 text-justify"
+                                        data-i18n="services.service2.description2">
                                         Cada máquina está respaldada por nuestro acompañamiento técnico y el suministro
                                         de cápsulas de café sostenibles, garantizando un servicio confiable, práctico y
                                         responsable con el planeta.
                                     </p>
-                                    <p class="font-helvetica text-white text-2xl text-left font-bold my-6">BENEFICIOS
+                                    <p class="font-helvetica text-white text-2xl text-left font-bold my-6"
+                                        data-i18n="services.service2.benefits.title">
+                                        BENEFICIOS
                                     </p>
                                     <div class="container-benefits">
                                         <div class="grid grid-cols-1 gap-4">
@@ -316,7 +369,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/right/icon-1.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service2.benefits.point1">
                                                     Mantenimiento incluido: nos encargamos del soporte técnico para
                                                     que tu servicio nunca se detenga.
                                                 </p>
@@ -325,7 +379,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/right/icon-2.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service2.benefits.point2">
                                                     Cápsulas compostables y biodegradables: un café premium con el
                                                     menor impacto ambiental.
                                                 </p>
@@ -334,7 +389,8 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/right/icon-3.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service2.benefits.point3">
                                                     Solución integral para hoteles y oficinas: máquina + cápsulas +
                                                     acompañamiento en un solo proveedor.
                                                 </p>
@@ -343,21 +399,25 @@
                                                 class="cols-span-1 flex items-center justify-center gap-4 border-3 rounded-xl border-gray-primary py-4 px-2 ml-6">
                                                 <img src="../assets/img/servicios/benefits/right/icon-4.png"
                                                     class="w-16 -ml-10 bg-brown-primary hover-scale" alt="">
-                                                <p class="font-helvetica text-white text-lg leading-5 font-bold">
+                                                <p class="font-helvetica text-white text-lg leading-5 font-bold"
+                                                    data-i18n="services.service2.benefits.point4">
                                                     Compatibilidad garantizada: equipos adaptados a cápsulas tipo
                                                     Nespresso compostables.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="font-helvetica text-white text-2xl text-left font-bold mt-6">PROPUESTA DE
+                                    <p class="font-helvetica text-white text-2xl text-left font-bold mt-6"
+                                        data-i18n="services.service2.value_proposition.title">PROPUESTA DE
                                         VALOR</p>
                                     <div class="mt-4">
                                         <ul class="list-disc list-inside space-y-2">
-                                            <li class="font-helvetica text-white text-lg leading-5">
+                                            <li class="font-helvetica text-white text-lg leading-5"
+                                                data-i18n="services.service2.value_proposition.point1">
                                                 Nuestras cápsulas no solo contienen café: contienen un propósito.
                                             </li>
-                                            <li class="font-helvetica text-white text-lg leading-5">
+                                            <li class="font-helvetica text-white text-lg leading-5"
+                                                data-i18n="services.service2.value_proposition.point2">
                                                 Cada cápsula de Coffee Bio Caps transforma el consumo cotidiano en una
                                                 acción consciente que protege el planeta y fortalece la reputación de tu
                                                 negocio como marca responsable.
@@ -370,8 +430,8 @@
                     </div>
 
                     <div class="col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-2 contain-message-final mb-4">
-                        <p
-                            class="font-helvetica text-3xl text-center font-extrabold italic mx-auto leading-6 text-gray-primary">
+                        <p class="font-helvetica text-3xl text-center font-extrabold italic mx-auto leading-6 text-gray-primary"
+                            data-i18n="services.final_message">
                             Transforma tu negocio con
                             cápsulas de café sostenibles y servicios integrales.
                         </p>
@@ -379,7 +439,8 @@
                 </div>
             </div>
             <button onclick="window.location.href='../#contact'"
-                class="-mt-5 bg-green-primary font-bold text-white px-6 py-2 rounded-full hover-scale mx-auto block font-helvetica cursor-pointer">
+                class="-mt-5 bg-green-primary font-bold text-white px-6 py-2 rounded-full hover-scale mx-auto block font-helvetica cursor-pointer"
+                data-i18n="services.final_button">
                 Saber más
             </button>
         </section>
@@ -397,6 +458,8 @@
                         <div class="container-logo-footer">
                             <img src="../assets/img/footer/logo.png" alt="Logo Footer"
                                 class="logo-footer hover-scale w-32 sm:w-40 md:w-48 lg:w-48 mx-auto">
+                            <img src="../assets/img/footer/logo-certificacion.jpeg" alt="Logo Certificación"
+                                class="logo-certificacion-footer hover-scale w-24 mx-auto mt-4">
                         </div>
                     </div>
                     <div class="md:col-span-2 lg:col-span-2 space-y-4 lg:space-y-4 lg:gap-3 xl:gap-3">
@@ -432,8 +495,8 @@
                                     class="w-5 sm:w-6 mr-4 hover-scale">
                             </div>
                             <div class="lg:col-span-2 info-contact-footer">
-                                <p
-                                    class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5">
+                                <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-base leading-5"
+                                    data-i18n="footer.office_location">
                                     Oficina principal: Bogotá, Colombia.</p>
                             </div>
                         </div>
@@ -453,8 +516,8 @@
                             </a>
                         </div>
                         <div>
-                            <p
-                                class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center">
+                            <p class="font-helvetica text-white font-bold text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-center"
+                                data-i18n="footer.copyright">
                                 Reservados todos los derechos<br>
                                 COFFEE BIOCAPS 2025.
                             </p>
@@ -466,6 +529,7 @@
     </footer>
 
     <!-- ====================== CUSTOM JS ====================== -->
+    <script type="module" src="../assets/js/i18n/i18n.js"></script>
     <script src="../assets/js/base/nav.js"></script>
     <script src="../assets/js/script.js"></script>
 

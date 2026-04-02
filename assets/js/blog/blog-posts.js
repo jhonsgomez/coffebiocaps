@@ -14,6 +14,16 @@ let totalPages = 2;
 let isLoading = false;
 
 /**
+ * Funcion para traducir textos dinámicos en esta página (paginación, estados, etc.)
+ */
+
+function translateContent() {
+    if (typeof applyTranslations === 'function' && window.currentTranslations) {
+        applyTranslations(window.currentTranslations);
+    }
+}
+
+/**
  * Inicializar carga de posts
  */
 async function initBlog() {
@@ -21,11 +31,13 @@ async function initBlog() {
         showLoadingState();
         await loadBlogPosts();
         setupPagination();
+        translateContent();
     } catch (error) {
         showError('Error al cargar los posts del blog');
         console.error('Error:', error);
     }
 }
+
 
 /**
  * Mostrar estado de carga
@@ -38,10 +50,12 @@ function showLoadingState() {
         <div class="col-span-3 flex justify-center items-center py-20">
             <div class="text-center">
                 <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-green-primary mx-auto mb-4"></div>
-                <p class="font-helvetica text-gray-primary font-bold">Cargando posts...</p>
+                <p class="font-helvetica text-gray-primary font-bold" data-i18n="blog.loading_posts">Cargando posts...</p>
             </div>
         </div>
     `;
+
+    translateContent();
 }
 
 /**
@@ -56,12 +70,14 @@ function showError(message) {
             <div class="text-center">
                 <p class="font-helvetica text-red-500 font-bold text-xl mb-4"><i class="fas fa-exclamation-triangle"></i> ${message}</p>
                 <button onclick="initBlog()" 
-                    class="bg-green-primary text-white px-8 py-3 rounded-full hover-scale font-helvetica font-bold cursor-pointer">
+                    class="bg-green-primary text-white px-8 py-3 rounded-full hover-scale font-helvetica font-bold cursor-pointer" data-i18n="blog.retry">
                     <i class="fas fa-redo"></i> Intentar nuevamente
                 </button>
             </div>
         </div>
     `;
+
+    translateContent();
 }
 
 /**
@@ -72,7 +88,8 @@ async function loadBlogPosts(page = 1) {
     isLoading = true;
 
     try {
-        const url = `${WP_API_CONFIG.baseUrl}${WP_API_CONFIG.endpoints.posts}?_embed&per_page=${WP_API_CONFIG.postsPerPage}&page=${page}`;
+        const lang = localStorage.getItem('lang') || 'es';
+        const url = `${WP_API_CONFIG.baseUrl}${WP_API_CONFIG.endpoints.posts}?_embed&per_page=${WP_API_CONFIG.postsPerPage}&page=${page}&lang=${lang}`;
 
         const response = await fetch(url);
 
@@ -93,7 +110,7 @@ async function loadBlogPosts(page = 1) {
 
         renderPosts(posts);
         updatePaginationControls();
-
+        translateContent();
     } catch (error) {
         console.error('Error cargando posts:', error);
         throw error;
@@ -112,12 +129,14 @@ function showEmptyState() {
     container.innerHTML = `
         <div class="col-span-3 flex justify-center items-center py-20">
             <div class="text-center">
-                <p class="font-helvetica text-gray-primary font-bold text-xl">
+                <p class="font-helvetica text-gray-primary font-bold text-xl" data-i18n="blog.no_posts">
                     No hay posts publicados aún.
                 </p>
             </div>
         </div>
     `;
+
+    translateContent();
 }
 
 /**
@@ -125,6 +144,7 @@ function showEmptyState() {
  */
 function renderPosts(posts) {
     const container = document.querySelector('.blog-grid-principal');
+    //const lang = localStorage.getItem('lang') || 'es';
     if (!container) return;
 
     container.innerHTML = '';
@@ -133,6 +153,7 @@ function renderPosts(posts) {
         const postCard = createPostCard(post);
         container.appendChild(postCard);
     });
+    translateContent();
 }
 
 /**
@@ -198,6 +219,8 @@ function setupPagination() {
         const saberMasBtn = aboutSection.querySelector('button');
         aboutSection.insertBefore(paginationContainer, saberMasBtn);
     }
+
+    translateContent();
 }
 
 /**
@@ -215,19 +238,23 @@ function updatePaginationControls() {
         <button 
             onclick="changePage(${currentPage - 1})" 
             ${currentPage === 1 ? 'disabled' : ''}
-            class="bg-green-primary text-white px-4 py-2 rounded-full hover-scale font-helvetica font-bold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
+            class="bg-green-primary text-white px-4 py-2 rounded-full hover-scale font-helvetica font-bold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            data-i18n="blog.previous">
             ← Anterior
         </button>
         <span class="font-helvetica font-bold text-gray-primary">
-            Página ${currentPage} de ${totalPages}
+            <span data-i18n="blog.page">Página</span> ${currentPage} <span data-i18n="blog.of">de</span> ${totalPages}
         </span>
         <button 
             onclick="changePage(${currentPage + 1})" 
             ${currentPage === totalPages ? 'disabled' : ''}
-            class="bg-green-primary text-white px-4 py-2 rounded-full hover-scale font-helvetica font-bold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
+            class="bg-green-primary text-white px-4 py-2 rounded-full hover-scale font-helvetica font-bold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            data-i18n="blog.next">
             Siguiente →
         </button>
     `;
+
+    translateContent();
 }
 
 /**
@@ -245,6 +272,7 @@ async function changePage(page) {
     }
 
     await loadBlogPosts(page);
+    translateContent();
 }
 
 /**
@@ -255,3 +283,7 @@ if (document.readyState === 'loading') {
 } else {
     initBlog();
 }
+
+document.addEventListener('langchange', () => {
+    initBlog();
+});
