@@ -11,14 +11,14 @@
             "title": "Compostable and Biodegradable Coffee Capsules | Coffee Bio Caps"
         },
         "hero": {
-            "title": "CAPSULES OF",
-            "subtitle1": "COFFEE COMPOSTABLE AND BIODEGRADABLE CAPSULES",
+            "title": "COMPOSTABLE AND",
+            "subtitle1": "BIODEGRADABLE COFFEE CAPSULES",
             "subtitle2": "FOR CONSCIOUS BUSINESSES",
-            "cta": "Learn More"
+            "cta": "Discover Our Solution"
         },
         "about": {
             "description": "At Coffee Bio Caps, we lead the sustainable revolution in single-serve coffee. Our compostable and biodegradable coffee capsules, compatible with Nespresso machines, are the perfect choice for hotels, offices, and coffee brands seeking a reliable partner committed to the planet.",
-            "title": "The pleasure of making conscious decisions begins with every sip"
+            "title": "Sustainable coffee experiences for conscious businesses"
         },
         "services": {
             "service1": {
@@ -48,10 +48,10 @@
             "question1": "DO YOU WANT COMPOSTABLE COFFEE CAPSULES",
             "question2": "IN YOUR BUSINESS?",
             "cta_text": "Contact us today and transform your service into a sustainable experience.",
-            "cta_button": "Learn more"
+            "cta_button": "Discover Our Solution"
         },
         "solutions": {
-            "title": "SUSTAINABLE SOLUTIONS IN COMPOSTABLE<br class='salto-linea-solutions'> COFFEE CAPSULES FOR YOUR BUSINESS",
+            "title": "SUSTAINABLE SOLUTIONS IN COMPOSTABLE<br class='salto-linea-solutions'> AND BIODEGRADABLE COFFEE CAPSULES<br class='salto-linea-solutions'> FOR YOUR BUSINESS",
             "description1": "At Coffee Bio Caps, we offer a comprehensive portfolio designed so that hotels, offices, and coffee brands enjoy the best coffee experience with environmental consciousness.",
             "description2": "Our services include the manufacture of compostable coffee capsules, the hire of Nespresso-compatible coffee machines, and the supply of biodegradable coffee capsules that are kind to the planet without compromising on flavour.",
             "solution1": {
@@ -113,11 +113,11 @@
             "title": "About Us | Manufacturers of Compostable Coffee Capsules | Coffee Bio Caps"
         },
         "title": "WE ARE",
-        "subtitle1": "pioneers in coffee capsules",
-        "subtitle2": "compostable in Colombia",
+        "subtitle1": "PIONEERS IN COMPOSTABLE",
+        "subtitle2": "COFFEE CAPSULES IN COLOMBIA",
         "about": {
             "description": "At Coffee Bio Caps, we lead the sustainable revolution in single-serve coffee. Our mission is to provide compostable and biodegradable coffee capsules that are compatible with Nespresso machines, offering the perfect choice for hotels, offices, and coffee brands seeking a reliable partner committed to environmental protection.",
-            "phrase": "The pleasure of making <br> conscious decisions<br> begins with every sip."
+            "phrase": "The pleasure of making conscious decisions<br> begins with every sip."
         },
         "mision": {
             "title": "Our Mission",
@@ -162,7 +162,7 @@
             "question1": "DO YOU WANT COMPOSTABLE COFFEE CAPSULES",
             "question2": "IN YOUR BUSINESS?",
             "cta_text": "Let's talk and make a positive difference together.",
-            "cta_button": "Learn more"
+            "cta_button": "Discover Our Solution"
         }
     },
     "services": {
@@ -170,7 +170,7 @@
             "title": "Sustainable Coffee Services | Compostable and Custom-Made Capsules | Coffee Bio Caps"
         },
         "hero": {
-            "title": "Sustainable solutions in compostable <span class='font-extrabold'>coffee capsules for your business</span>"
+            "title": "Sustainable solutions in compostable and biodegradable <span class='font-extrabold'>coffee capsules for your business</span>"
         },
         "service1": {
             "phrase": "At Coffee Bio Caps, we offer a comprehensive range designed to ensure that hotels, offices and coffee brands can enjoy the best environmentally conscious coffee experience.",
@@ -181,8 +181,8 @@
                 "title": "BENEFITS",
                 "point1": "100% compostable and biodegradable: Reduce your environmental footprint",
                 "point2": "Nespresso-compatible: Enhance your brand's sustainability credentials",
-                "point3": "Premium quality coffee: Provide premium coffee experiences",
-                "point4": "Custom branding available: Support a circular economy"
+                "point3": "<p>Premium quality coffee: Provide premium coffee experiences &emsp;</p>",
+                "point4": "<p>Custom branding available: Support a circular economy &emsp;&emsp;&emsp;</p>"
             },
             "value_proposition": {
                 "title": "VALUE PROPOSITION",
@@ -209,11 +209,11 @@
             }
         },
         "final_message": "Transform your business with sustainable coffee capsules and comprehensive services.",
-        "final_button": "Learn more"
+        "final_button": "Discover Our Solution"
     },
     "blog": {
         "head": {
-            "title": "Blog on Compostable Coffee Capsules and Sustainability | Coffee Bio Caps"
+            "title": "Blog on Compostable and Biodegradable Coffee Capsules and Sustainability | Coffee Bio Caps"
         },
         "post": {
             "head": {
@@ -233,7 +233,7 @@
             "loading": "Loading post..."
         },
         "hero": {
-            "title": "<span class='font-extrabold'>Blog about compostable coffee capsules,</span><br> sustainability and <br>innovation"
+            "title": "<span class='font-extrabold'>Blog about compostable<br> and biodegradable coffee capsules,</span> sustainability and <br>innovation"
         },
         "about": {
             "description1": "On the Coffee Bio Caps blog, we share insights, trends and best practices from the world of single-serve coffee.",
@@ -247,7 +247,7 @@
         "next": "Next →",
         "page": "Page",
         "of": "of",
-        "see_more": "Learn more"
+        "see_more": "Discover Our Solution"
     },
     "faq": {
         "head": {
@@ -346,12 +346,12 @@
                 "answer": "Yes, Coffee Caps can be placed in your home compost or community compost bin."
             }
         },
-        "final_message": "Do you have any further questions about our compostable coffee capsules or our services?",
+        "final_message": "Do you have any further questions about our compostable and biodegradable coffee capsules or our services?",
         "final_message_contact": "Get in touch and one of our specialist advisors will help you design the perfect solution for your business.",
-        "final_message_button": "Learn more"
+        "final_message_button": "Discover Our Solution"
     },
     "message": {
-        "title": "PIONEERS IN COMPOSTABLE COFFEE<br class='salto-linea'> CAPSULES IN COLOMBIA",
+        "title": "PIONEERS IN COMPOSTABLE AND <br class='salto-linea'>BIODEGRADABLE COFFEE<br class='salto-linea'> CAPSULES IN COLOMBIA",
         "description": "The pleasure of making<br> conscious decisions guides every step of what we do."
     },
     "footer": {
